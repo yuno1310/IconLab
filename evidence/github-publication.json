@@ -1,0 +1,10 @@
+{
+  "verified_date": "2026-09-14",
+  "repository": "https://github.com/yuno1310/IconLab",
+  "public": true,
+  "default_branch": "main",
+  "initial_published_main_commit": "e569944b41f66e23cc790ecbc229f382a6a904fa",
+  "verification": "GitHub public REST API and git ls-remote; main contained the submission files. Default branch changed from README-only master to main using authenticated GitHub API.",
+  "snapshot_tag": "submission-ready-v1",
+  "human_approval_and_program_submission": "Pending; publication does not satisfy these gates."
+}

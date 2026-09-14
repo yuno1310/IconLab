@@ -1,6 +1,6 @@
 # Track D submission pack
 
-The project is built and evaluated locally using free tooling. **The program is not fully signed off or submitted:** human review, independent reproduction and public GitHub publication remain pending.
+The project is built and evaluated locally using free tooling and published at [yuno1310/IconLab](https://github.com/yuno1310/IconLab/tree/main). **The program is not fully signed off or submitted:** human review, independent reproduction and submission remain pending.
 
 ## Open first
 
@@ -25,23 +25,23 @@ Errors count as failed answers. Ten must-refuse cases pass in the improved syste
 |---|---|---|
 | 1 | `docs/discovery-brief.md`, `docs/house-rules.md`, versioned sources | Supervisor sign-off and team circulation |
 | 2 | `src/agent.py`, corpus, local Ollama, Langfuse traces | Reviewer demonstration acceptance |
-| 3 | `golden-set.yaml`: 50 balanced questions | GitHub publication |
-| 4 | Policy post, assignment-04 deck and video | Author review, repo/tag, submission |
-| 5 | Reusable harness and recorded baseline | GitHub publication |
-| 6 | Separate-scores post, assignment-06 deck and video | Author review, repo/tag, submission |
+| 3 | `golden-set.yaml`: 50 balanced questions | Published on GitHub |
+| 4 | Policy post, assignment-04 deck and video | Author review and submission |
+| 5 | Reusable harness and recorded baseline | Published on GitHub |
+| 6 | Separate-scores post, assignment-06 deck and video | Author review and submission |
 | 7 | SETUP.md and reproduction log | Actual second person on a clean setup |
 | 8 | OWASP assessment, before/fix evidence and tests | Reviewer acceptance of documented scope |
-| 9 | Improved run, security post, assignment-09 deck and video | Repo/tag and submission |
-| 10 | All ten refusal transcripts, assignment-10 deck and video | Repo/tag and submission |
+| 9 | Improved run, security post, assignment-09 deck and video | Submission |
+| 10 | All ten refusal transcripts, assignment-10 deck and video | Submission |
 | 11 | Langfuse-exported latency, token totals, prior guesses and cost scenario | Review different-model price assumption |
-| 12 | README, setup, reusable harness, final deck/video, archive | Public repo and clean-machine verification |
+| 12 | README, setup, reusable harness, final deck/video, archive | Clean-machine verification |
 | 13 | Retrospective draft, assignment-13 deck/video, final team section | Personalize, contribute to team and submit |
 
 ## Files for the five submissions
 
 For assignment numbers 04, 06, 09, 10 and 13, each `output/decks/assignment-NN-ready.pptx` has eight slides and each `output/videos/assignment-NN.mp4` has a three-minute narrated replay. Posts are numbered 01 through 05 in `posts/`. The consolidated final deck is `final-deck-ready.pptx`.
 
-Use `docs/submission-message.md` after the repository exists. No message has been sent and no personal belief, meeting, sign-off, public release or second-person run has been invented.
+Use `docs/submission-message.md` for the published repository and snapshot tag. No message has been sent; personal review, meetings, sign-off and second-person reproduction remain pending.
 
 ## Running services
 

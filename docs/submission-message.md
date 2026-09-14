@@ -4,9 +4,9 @@ Do not send until the repository, assignment tag and human gates are complete. T
 
 Track D: Harbor Support Evidence Lab
 
-Repository: pending creation in the intern's GitHub account
+Repository: https://github.com/yuno1310/IconLab/tree/main (public, verified 2026-09-14)
 
-Assignment tag: pending, use a tag identifying the reviewed submission snapshot
+Submission snapshot tag: submission-ready-v1 (prepared snapshot; not a claim of historical assignment submissions)
 
 Deck: attach the corresponding assignment-NN-ready.pptx
 

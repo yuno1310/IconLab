@@ -1,12 +1,12 @@
 # Final acceptance and publishing
 
-The deliverables are prepared. Completion of the program still requires real human approvals and publication. A percentage is an estimate, not a verified acceptance result.
+The deliverables are prepared and the project is public at https://github.com/yuno1310/IconLab/tree/main (verified 2026-09-14). Completion of the program still requires real human approvals and submission. A percentage is an estimate, not a verified acceptance result.
 
 ## Publish the prepared repository
 
 `output/harbor-track-d.bundle` is a portable Git repository containing the reviewed submission files and the `submission-ready-v1` tag. The commit identifies the preparation tool as Codex; it does not impersonate the intern. This tag marks the completed preparation snapshot, not past assignment submissions.
 
-Create an empty public repository in your own GitHub account, then run:
+The existing repository is already published. The commands below are only for creating a separate copy from the portable bundle:
 
 ```powershell
 git clone -b codex/track-d output/harbor-track-d.bundle harbor-track-d-publish
@@ -28,7 +28,9 @@ Replace the example URL with the actual repository URL. Authenticate through Git
 | Independent reproduction | Reviewer completes `docs/reproduction-log.md` using `SETUP.md` | Pending |
 | Authorship review | Intern checks and personalizes the retrospective | Pending |
 | Presentation acceptance | Reviewer accepts synthetic narration/replay, or intern records required personal/live demos | Pending |
-| Public repository | Published URL and accessible submission tag | Pending |
+| Public repository | https://github.com/yuno1310/IconLab/tree/main; snapshot tag `submission-ready-v1` | Published; see remote verification record |
 | Submission | Actual destination and confirmation of receipt | Pending |
 
 Use `docs/submission-message.md` after filling these real details. Automated tests and an isolated extracted-copy check support readiness but cannot substitute for a second person's review.
+
+Existing slides and narrated replays describe the preparation-time status. Their references to publication being pending are historical; this handoff records the subsequent GitHub publication.
