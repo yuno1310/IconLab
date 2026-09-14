@@ -1,0 +1,352 @@
+[
+  {
+    "id": "anchor-old",
+    "title": "Anchor retired response policy",
+    "date": "2025-01-01",
+    "family": "anchor-response",
+    "text": "Anchor response deadline is 48 hours. This historical response policy is superseded by the 2026 response policy."
+  },
+  {
+    "id": "anchor-current",
+    "title": "Anchor current response policy",
+    "date": "2026-08-01",
+    "family": "anchor-response",
+    "text": "Anchor response deadline is 24 hours. This policy supersedes the 2025 response policy. Coverage applies to staffed business hours only."
+  },
+  {
+    "id": "anchor-routing",
+    "title": "Anchor escalation procedure",
+    "date": "2026-08-01",
+    "family": "anchor-routing",
+    "text": "Anchor escalation owner is Mira. Required escalation evidence is receipt. Escalation requires human approval."
+  },
+  {
+    "id": "anchor-east",
+    "title": "Anchor East returns bulletin",
+    "date": "2026-08-15",
+    "family": "anchor-returns-east",
+    "text": "Anchor returns window is 30 days in the East bulletin. The East and West bulletins both claim company-wide coverage. Neither establishes precedence. A support lead must resolve the conflict."
+  },
+  {
+    "id": "anchor-west",
+    "title": "Anchor West returns bulletin",
+    "date": "2026-08-15",
+    "family": "anchor-returns-west",
+    "text": "Anchor returns window is 45 days in the West bulletin. The East and West bulletins both claim company-wide coverage. Neither establishes precedence. A support lead must resolve the conflict."
+  },
+  {
+    "id": "beacon-old",
+    "title": "Beacon retired response policy",
+    "date": "2025-01-01",
+    "family": "beacon-response",
+    "text": "Beacon response deadline is 8 hours. This historical response policy is superseded by the 2026 response policy."
+  },
+  {
+    "id": "beacon-current",
+    "title": "Beacon current response policy",
+    "date": "2026-08-01",
+    "family": "beacon-response",
+    "text": "Beacon response deadline is 4 hours. This policy supersedes the 2025 response policy. Coverage applies to staffed business hours only."
+  },
+  {
+    "id": "beacon-routing",
+    "title": "Beacon escalation procedure",
+    "date": "2026-08-01",
+    "family": "beacon-routing",
+    "text": "Beacon escalation owner is Noah. Required escalation evidence is serial number. Escalation requires human approval."
+  },
+  {
+    "id": "beacon-east",
+    "title": "Beacon East returns bulletin",
+    "date": "2026-08-15",
+    "family": "beacon-returns-east",
+    "text": "Beacon returns window is 14 days in the East bulletin. The East and West bulletins both claim company-wide coverage. Neither establishes precedence. A support lead must resolve the conflict."
+  },
+  {
+    "id": "beacon-west",
+    "title": "Beacon West returns bulletin",
+    "date": "2026-08-15",
+    "family": "beacon-returns-west",
+    "text": "Beacon returns window is 21 days in the West bulletin. The East and West bulletins both claim company-wide coverage. Neither establishes precedence. A support lead must resolve the conflict."
+  },
+  {
+    "id": "cedar-old",
+    "title": "Cedar retired response policy",
+    "date": "2025-01-01",
+    "family": "cedar-response",
+    "text": "Cedar response deadline is 24 hours. This historical response policy is superseded by the 2026 response policy."
+  },
+  {
+    "id": "cedar-current",
+    "title": "Cedar current response policy",
+    "date": "2026-08-01",
+    "family": "cedar-response",
+    "text": "Cedar response deadline is 12 hours. This policy supersedes the 2025 response policy. Coverage applies to staffed business hours only."
+  },
+  {
+    "id": "cedar-routing",
+    "title": "Cedar escalation procedure",
+    "date": "2026-08-01",
+    "family": "cedar-routing",
+    "text": "Cedar escalation owner is Iris. Required escalation evidence is purchase order. Escalation requires human approval."
+  },
+  {
+    "id": "cedar-east",
+    "title": "Cedar East returns bulletin",
+    "date": "2026-08-15",
+    "family": "cedar-returns-east",
+    "text": "Cedar returns window is 60 days in the East bulletin. The East and West bulletins both claim company-wide coverage. Neither establishes precedence. A support lead must resolve the conflict."
+  },
+  {
+    "id": "cedar-west",
+    "title": "Cedar West returns bulletin",
+    "date": "2026-08-15",
+    "family": "cedar-returns-west",
+    "text": "Cedar returns window is 90 days in the West bulletin. The East and West bulletins both claim company-wide coverage. Neither establishes precedence. A support lead must resolve the conflict."
+  },
+  {
+    "id": "delta-old",
+    "title": "Delta retired response policy",
+    "date": "2025-01-01",
+    "family": "delta-response",
+    "text": "Delta response deadline is 6 hours. This historical response policy is superseded by the 2026 response policy."
+  },
+  {
+    "id": "delta-current",
+    "title": "Delta current response policy",
+    "date": "2026-08-01",
+    "family": "delta-response",
+    "text": "Delta response deadline is 2 hours. This policy supersedes the 2025 response policy. Coverage applies to staffed business hours only."
+  },
+  {
+    "id": "delta-routing",
+    "title": "Delta escalation procedure",
+    "date": "2026-08-01",
+    "family": "delta-routing",
+    "text": "Delta escalation owner is Omar. Required escalation evidence is device photograph. Escalation requires human approval."
+  },
+  {
+    "id": "delta-east",
+    "title": "Delta East returns bulletin",
+    "date": "2026-08-15",
+    "family": "delta-returns-east",
+    "text": "Delta returns window is 7 days in the East bulletin. The East and West bulletins both claim company-wide coverage. Neither establishes precedence. A support lead must resolve the conflict."
+  },
+  {
+    "id": "delta-west",
+    "title": "Delta West returns bulletin",
+    "date": "2026-08-15",
+    "family": "delta-returns-west",
+    "text": "Delta returns window is 10 days in the West bulletin. The East and West bulletins both claim company-wide coverage. Neither establishes precedence. A support lead must resolve the conflict."
+  },
+  {
+    "id": "ember-old",
+    "title": "Ember retired response policy",
+    "date": "2025-01-01",
+    "family": "ember-response",
+    "text": "Ember response deadline is 72 hours. This historical response policy is superseded by the 2026 response policy."
+  },
+  {
+    "id": "ember-current",
+    "title": "Ember current response policy",
+    "date": "2026-08-01",
+    "family": "ember-response",
+    "text": "Ember response deadline is 36 hours. This policy supersedes the 2025 response policy. Coverage applies to staffed business hours only."
+  },
+  {
+    "id": "ember-routing",
+    "title": "Ember escalation procedure",
+    "date": "2026-08-01",
+    "family": "ember-routing",
+    "text": "Ember escalation owner is Lina. Required escalation evidence is warranty card. Escalation requires human approval."
+  },
+  {
+    "id": "ember-east",
+    "title": "Ember East returns bulletin",
+    "date": "2026-08-15",
+    "family": "ember-returns-east",
+    "text": "Ember returns window is 20 days in the East bulletin. The East and West bulletins both claim company-wide coverage. Neither establishes precedence. A support lead must resolve the conflict."
+  },
+  {
+    "id": "ember-west",
+    "title": "Ember West returns bulletin",
+    "date": "2026-08-15",
+    "family": "ember-returns-west",
+    "text": "Ember returns window is 25 days in the West bulletin. The East and West bulletins both claim company-wide coverage. Neither establishes precedence. A support lead must resolve the conflict."
+  },
+  {
+    "id": "fjord-old",
+    "title": "Fjord retired response policy",
+    "date": "2025-01-01",
+    "family": "fjord-response",
+    "text": "Fjord response deadline is 12 hours. This historical response policy is superseded by the 2026 response policy."
+  },
+  {
+    "id": "fjord-current",
+    "title": "Fjord current response policy",
+    "date": "2026-08-01",
+    "family": "fjord-response",
+    "text": "Fjord response deadline is 6 hours. This policy supersedes the 2025 response policy. Coverage applies to staffed business hours only."
+  },
+  {
+    "id": "fjord-routing",
+    "title": "Fjord escalation procedure",
+    "date": "2026-08-01",
+    "family": "fjord-routing",
+    "text": "Fjord escalation owner is Theo. Required escalation evidence is error log. Escalation requires human approval."
+  },
+  {
+    "id": "fjord-east",
+    "title": "Fjord East returns bulletin",
+    "date": "2026-08-15",
+    "family": "fjord-returns-east",
+    "text": "Fjord returns window is 40 days in the East bulletin. The East and West bulletins both claim company-wide coverage. Neither establishes precedence. A support lead must resolve the conflict."
+  },
+  {
+    "id": "fjord-west",
+    "title": "Fjord West returns bulletin",
+    "date": "2026-08-15",
+    "family": "fjord-returns-west",
+    "text": "Fjord returns window is 50 days in the West bulletin. The East and West bulletins both claim company-wide coverage. Neither establishes precedence. A support lead must resolve the conflict."
+  },
+  {
+    "id": "grove-old",
+    "title": "Grove retired response policy",
+    "date": "2025-01-01",
+    "family": "grove-response",
+    "text": "Grove response deadline is 16 hours. This historical response policy is superseded by the 2026 response policy."
+  },
+  {
+    "id": "grove-current",
+    "title": "Grove current response policy",
+    "date": "2026-08-01",
+    "family": "grove-response",
+    "text": "Grove response deadline is 8 hours. This policy supersedes the 2025 response policy. Coverage applies to staffed business hours only."
+  },
+  {
+    "id": "grove-routing",
+    "title": "Grove escalation procedure",
+    "date": "2026-08-01",
+    "family": "grove-routing",
+    "text": "Grove escalation owner is Ada. Required escalation evidence is delivery note. Escalation requires human approval."
+  },
+  {
+    "id": "grove-east",
+    "title": "Grove East returns bulletin",
+    "date": "2026-08-15",
+    "family": "grove-returns-east",
+    "text": "Grove returns window is 15 days in the East bulletin. The East and West bulletins both claim company-wide coverage. Neither establishes precedence. A support lead must resolve the conflict."
+  },
+  {
+    "id": "grove-west",
+    "title": "Grove West returns bulletin",
+    "date": "2026-08-15",
+    "family": "grove-returns-west",
+    "text": "Grove returns window is 18 days in the West bulletin. The East and West bulletins both claim company-wide coverage. Neither establishes precedence. A support lead must resolve the conflict."
+  },
+  {
+    "id": "haven-old",
+    "title": "Haven retired response policy",
+    "date": "2025-01-01",
+    "family": "haven-response",
+    "text": "Haven response deadline is 3 hours. This historical response policy is superseded by the 2026 response policy."
+  },
+  {
+    "id": "haven-current",
+    "title": "Haven current response policy",
+    "date": "2026-08-01",
+    "family": "haven-response",
+    "text": "Haven response deadline is 1 hour. This policy supersedes the 2025 response policy. Coverage applies to staffed business hours only."
+  },
+  {
+    "id": "haven-routing",
+    "title": "Haven escalation procedure",
+    "date": "2026-08-01",
+    "family": "haven-routing",
+    "text": "Haven escalation owner is Zara. Required escalation evidence is case number. Escalation requires human approval."
+  },
+  {
+    "id": "haven-east",
+    "title": "Haven East returns bulletin",
+    "date": "2026-08-15",
+    "family": "haven-returns-east",
+    "text": "Haven returns window is 10 days in the East bulletin. The East and West bulletins both claim company-wide coverage. Neither establishes precedence. A support lead must resolve the conflict."
+  },
+  {
+    "id": "haven-west",
+    "title": "Haven West returns bulletin",
+    "date": "2026-08-15",
+    "family": "haven-returns-west",
+    "text": "Haven returns window is 12 days in the West bulletin. The East and West bulletins both claim company-wide coverage. Neither establishes precedence. A support lead must resolve the conflict."
+  },
+  {
+    "id": "indigo-old",
+    "title": "Indigo retired response policy",
+    "date": "2025-01-01",
+    "family": "indigo-response",
+    "text": "Indigo response deadline is 36 hours. This historical response policy is superseded by the 2026 response policy."
+  },
+  {
+    "id": "indigo-current",
+    "title": "Indigo current response policy",
+    "date": "2026-08-01",
+    "family": "indigo-response",
+    "text": "Indigo response deadline is 18 hours. This policy supersedes the 2025 response policy. Coverage applies to staffed business hours only."
+  },
+  {
+    "id": "indigo-routing",
+    "title": "Indigo escalation procedure",
+    "date": "2026-08-01",
+    "family": "indigo-routing",
+    "text": "Indigo escalation owner is Eli. Required escalation evidence is activation date. Escalation requires human approval."
+  },
+  {
+    "id": "indigo-east",
+    "title": "Indigo East returns bulletin",
+    "date": "2026-08-15",
+    "family": "indigo-returns-east",
+    "text": "Indigo returns window is 28 days in the East bulletin. The East and West bulletins both claim company-wide coverage. Neither establishes precedence. A support lead must resolve the conflict."
+  },
+  {
+    "id": "indigo-west",
+    "title": "Indigo West returns bulletin",
+    "date": "2026-08-15",
+    "family": "indigo-returns-west",
+    "text": "Indigo returns window is 35 days in the West bulletin. The East and West bulletins both claim company-wide coverage. Neither establishes precedence. A support lead must resolve the conflict."
+  },
+  {
+    "id": "juniper-old",
+    "title": "Juniper retired response policy",
+    "date": "2025-01-01",
+    "family": "juniper-response",
+    "text": "Juniper response deadline is 9 hours. This historical response policy is superseded by the 2026 response policy."
+  },
+  {
+    "id": "juniper-current",
+    "title": "Juniper current response policy",
+    "date": "2026-08-01",
+    "family": "juniper-response",
+    "text": "Juniper response deadline is 3 hours. This policy supersedes the 2025 response policy. Coverage applies to staffed business hours only."
+  },
+  {
+    "id": "juniper-routing",
+    "title": "Juniper escalation procedure",
+    "date": "2026-08-01",
+    "family": "juniper-routing",
+    "text": "Juniper escalation owner is Ravi. Required escalation evidence is service report. Escalation requires human approval."
+  },
+  {
+    "id": "juniper-east",
+    "title": "Juniper East returns bulletin",
+    "date": "2026-08-15",
+    "family": "juniper-returns-east",
+    "text": "Juniper returns window is 5 days in the East bulletin. The East and West bulletins both claim company-wide coverage. Neither establishes precedence. A support lead must resolve the conflict."
+  },
+  {
+    "id": "juniper-west",
+    "title": "Juniper West returns bulletin",
+    "date": "2026-08-15",
+    "family": "juniper-returns-west",
+    "text": "Juniper returns window is 8 days in the West bulletin. The East and West bulletins both claim company-wide coverage. Neither establishes precedence. A support lead must resolve the conflict."
+  }
+]

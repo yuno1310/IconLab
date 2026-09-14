@@ -1,0 +1,27 @@
+"""Create narration chapters for six evidence-replay demos. No invented live recording."""
+import json
+from pathlib import Path
+root=Path(__file__).resolve().parents[1]
+intros={
+'assignment-04':'This review explains the policy boundary behind our support evidence lab. Harbor Devices is fictional. Its analysts need reliable answers, but this project never connects to a customer or SAP system. The policy discussion is a technical reading of public documents, not legal advice. The reading date is fourteen September twenty twenty six.',
+'assignment-06':'Harbor Devices is a fictional distributor whose analysts search separate policy files before answering support questions. A fluent answer can still contain an old deadline or miss a conflict. This demo shows why the project scores retrieval and generation separately. Every result shown is a replay of a recorded local model run, using synthetic data.',
+'assignment-09':'A support answer can be correct while its tools expose another user’s data. This demo reviews our own local MCP server and the RAG system beside it. There are two synthetic cases and no business writes. All security tests target the code created for this lab, with no remote or client target.',
+'assignment-10':'Harbor Devices is a fictional support team. Its policy documents cannot answer questions about annual revenue, bank accounts or live stock. The expensive failure is a confident unsupported answer. This demo uses recorded local model results to show refusal behavior and the limits of our evidence. The data and company are synthetic.',
+'assignment-13':'This retrospective describes the recorded build of the Harbor Support Evidence Lab. It does not claim personal experiences or meetings that did not happen. The fictional customer needs trustworthy policy answers. The project produced code, a fifty question evaluation set, local traces, and a small MCP security assessment. Here are the failures that changed the implementation.',
+'final-deck':'Harbor Devices is a fictional distributor whose support analysts need trustworthy policy answers. They search old policies and conflicting bulletins before deciding what to tell a customer. This project tests where that workflow breaks. The evidence viewer replays real local model runs over generated documents. It is not a live model call or a production system.'}
+policy='The policy is version four point twenty twenty six A. The FAQ retrieved from the official redirect is version one point three, dated June twenty twenty six. A stable URL was not enough to establish the version. The written review preserves the nuance between FAQ questions thirty nine and fifty six on custom MCP use.'
+common=[
+'Here is a simple owner lookup. The baseline returns Mira and passes. The improved model also names Mira, but invents an invalid source identifier. Its validator rejects that answer. This is a real regression, not a polished success-only demo. Retrieving the right document IDs does not prove a model will produce valid citations.',
+'Now consider conflicting return policies. The baseline quotes two windows but omits the required conflict resolution. The improved answer explains that neither bulletin establishes precedence and that a support lead must resolve the conflict. Both systems recovered the required source IDs. That is why the separate generation column provides a useful diagnostic signal.',
+'The annual revenue question has no answer in the corpus. The baseline invents one hundred million dollars and attaches policy citations that do not support it. The improved query coverage guard declines before calling the model. Across ten must-refuse cases it passes all ten. This guard is lexical, so paraphrases and adversarial queries still need testing.',
+'The complete model comparison covers fifty questions. Baseline retrieval passes thirty and generation passes fifteen. Improved retrieval passes all fifty, while generation passes thirty eight. Ten improved responses encounter execution or citation validation errors and count as failures. The dataset and corpus were jointly authored, so these results are development evidence rather than independent validation.',
+'The security evidence shows analyst A reading analyst B’s case before the fix. The served version checks ownership and returns case unavailable. A thousand-call exercise originally accepted every call. With the quota, twenty calls pass and nine hundred eighty fail in one simulated minute. Restarting the process resets that quota. Remote authentication is not implemented.',
+'The package includes the source, golden set, setup guide, transcripts, and exported Langfuse observations. Generation latency in the final improved run is about seven hundred forty four milliseconds at the median, and nineteen hundred seventy seven at the ninety fifth percentile. Human sign-off, a second-person clean setup, GitHub publication, and team submission are still pending.'
+]
+out={}
+for key,intro in intros.items():
+    chapters=[intro]+common.copy()
+    if key=='assignment-04': chapters[1]=policy
+    out[key]=chapters
+    (root/'docs'/f'{key}-demo-script.md').write_text('# Three-minute evidence replay script\n\nSynthetic voice narration; recorded results, not a live screen recording.\n\n'+'\n\n'.join(f'## Scene {i+1}\n\n{t}' for i,t in enumerate(chapters))+'\n',encoding='utf-8')
+(root/'tmp/narration.json').write_text(json.dumps(out,ensure_ascii=False),encoding='utf-8')

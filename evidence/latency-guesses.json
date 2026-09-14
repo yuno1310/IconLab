@@ -1,0 +1,8 @@
+{
+  "recorded_on": "2026-09-14",
+  "stage": "before first benchmark run",
+  "unit": "milliseconds",
+  "scope": "engineering hypotheses, not user estimates",
+  "fixture": {"retrieval": {"p50": 5, "p95": 20}, "generation": {"p50": 1, "p95": 5}},
+  "ollama": {"retrieval": {"p50": 5, "p95": 20}, "generation": {"p50": 3000, "p95": 10000}}
+}

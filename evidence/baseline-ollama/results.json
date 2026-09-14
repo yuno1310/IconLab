@@ -1,0 +1,1499 @@
+{
+  "summary": {
+    "recorded_at": "2026-09-13T21:51:58.865236+00:00",
+    "python": "3.12.14",
+    "backend": "ollama",
+    "mode": "naive",
+    "n": 50,
+    "golden_sha256": "48c373efb3f18a8e9c417fc877b1fdd07fc51bd09a10c62b52129a3b188f13a3",
+    "corpus_sha256": "96a7eae730ec65601aadf1b63836a5f848a48ec5f03844b926d36faaf7b92410",
+    "retrieval_passes": 30,
+    "generation_passes": 3,
+    "errors": 45,
+    "categories": {
+      "easy": 10,
+      "synthesis": 10,
+      "conflict": 10,
+      "stale": 10,
+      "must_refuse": 10
+    },
+    "warning": "Rule-based grading requires human calibration."
+  },
+  "rows": [
+    {
+      "id": "Q01",
+      "category": "easy",
+      "question": "Who is the Anchor escalation owner?",
+      "expected_answer": "Mira",
+      "expected_sources": [
+        "anchor-routing"
+      ],
+      "required_terms": [
+        "Mira"
+      ],
+      "forbidden_terms": [],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": false,
+      "actual": {
+        "answer": "",
+        "citations": [],
+        "refused": false,
+        "retrieved_sources": [
+          "anchor-routing",
+          "beacon-routing"
+        ],
+        "trace_id": "e41a9e3968cc4059ae5af23926a518b7",
+        "error": "JSONDecodeError: Unterminated string starting at: line 1 column 1090 (char 1089)"
+      }
+    },
+    {
+      "id": "Q02",
+      "category": "easy",
+      "question": "Who is the Beacon escalation owner?",
+      "expected_answer": "Noah",
+      "expected_sources": [
+        "beacon-routing"
+      ],
+      "required_terms": [
+        "Noah"
+      ],
+      "forbidden_terms": [],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": false,
+      "actual": {
+        "answer": "",
+        "citations": [],
+        "refused": false,
+        "retrieved_sources": [
+          "beacon-routing",
+          "anchor-routing"
+        ],
+        "trace_id": "ac8b5bede5a7476b9598af68d21d57a2",
+        "error": "JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 1235 (char 1234)"
+      }
+    },
+    {
+      "id": "Q03",
+      "category": "easy",
+      "question": "Who is the Cedar escalation owner?",
+      "expected_answer": "Iris",
+      "expected_sources": [
+        "cedar-routing"
+      ],
+      "required_terms": [
+        "Iris"
+      ],
+      "forbidden_terms": [],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": false,
+      "actual": {
+        "answer": "",
+        "citations": [],
+        "refused": false,
+        "retrieved_sources": [
+          "cedar-routing",
+          "anchor-routing"
+        ],
+        "trace_id": "b2f5ad92aeb34a8aa790a6738b91daae",
+        "error": "JSONDecodeError: Unterminated string starting at: line 1 column 1275 (char 1274)"
+      }
+    },
+    {
+      "id": "Q04",
+      "category": "easy",
+      "question": "Who is the Delta escalation owner?",
+      "expected_answer": "Omar",
+      "expected_sources": [
+        "delta-routing"
+      ],
+      "required_terms": [
+        "Omar"
+      ],
+      "forbidden_terms": [],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": false,
+      "actual": {
+        "answer": "",
+        "citations": [],
+        "refused": false,
+        "retrieved_sources": [
+          "delta-routing",
+          "anchor-routing"
+        ],
+        "trace_id": "453ad2df27f84a5c84f0d1e15fc1353d",
+        "error": "JSONDecodeError: Unterminated string starting at: line 1 column 1272 (char 1271)"
+      }
+    },
+    {
+      "id": "Q05",
+      "category": "easy",
+      "question": "Who is the Ember escalation owner?",
+      "expected_answer": "Lina",
+      "expected_sources": [
+        "ember-routing"
+      ],
+      "required_terms": [
+        "Lina"
+      ],
+      "forbidden_terms": [],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": false,
+      "actual": {
+        "answer": "",
+        "citations": [],
+        "refused": false,
+        "retrieved_sources": [
+          "ember-routing",
+          "anchor-routing"
+        ],
+        "trace_id": "470f173d07ea4f1eb2a04742740ae327",
+        "error": "JSONDecodeError: Unterminated string starting at: line 1 column 1280 (char 1279)"
+      }
+    },
+    {
+      "id": "Q06",
+      "category": "easy",
+      "question": "Who is the Fjord escalation owner?",
+      "expected_answer": "Theo",
+      "expected_sources": [
+        "fjord-routing"
+      ],
+      "required_terms": [
+        "Theo"
+      ],
+      "forbidden_terms": [],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "Theo is the Fjord escalation owner.",
+        "citations": [
+          "fjord-routing",
+          "anchor-routing"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "fjord-routing",
+          "anchor-routing"
+        ],
+        "trace_id": "2b2da08885f244a79f7307ea1e75280e",
+        "error": null
+      }
+    },
+    {
+      "id": "Q07",
+      "category": "easy",
+      "question": "Who is the Grove escalation owner?",
+      "expected_answer": "Ada",
+      "expected_sources": [
+        "grove-routing"
+      ],
+      "required_terms": [
+        "Ada"
+      ],
+      "forbidden_terms": [],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": false,
+      "actual": {
+        "answer": "",
+        "citations": [],
+        "refused": false,
+        "retrieved_sources": [
+          "grove-routing",
+          "anchor-routing"
+        ],
+        "trace_id": "e92eb1853b614ed2bf397f30a23b5944",
+        "error": "JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 1271 (char 1270)"
+      }
+    },
+    {
+      "id": "Q08",
+      "category": "easy",
+      "question": "Who is the Haven escalation owner?",
+      "expected_answer": "Zara",
+      "expected_sources": [
+        "haven-routing"
+      ],
+      "required_terms": [
+        "Zara"
+      ],
+      "forbidden_terms": [],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": false,
+      "actual": {
+        "answer": "",
+        "citations": [],
+        "refused": false,
+        "retrieved_sources": [
+          "haven-routing",
+          "anchor-routing"
+        ],
+        "trace_id": "f7e2e232d94445e397b2bbb7585c8959",
+        "error": "ValueError: Invalid model answer schema"
+      }
+    },
+    {
+      "id": "Q09",
+      "category": "easy",
+      "question": "Who is the Indigo escalation owner?",
+      "expected_answer": "Eli",
+      "expected_sources": [
+        "indigo-routing"
+      ],
+      "required_terms": [
+        "Eli"
+      ],
+      "forbidden_terms": [],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": false,
+      "actual": {
+        "answer": "",
+        "citations": [],
+        "refused": false,
+        "retrieved_sources": [
+          "indigo-routing",
+          "anchor-routing"
+        ],
+        "trace_id": "feb9577d1c0d477a9acd3fc4efdf10bf",
+        "error": "JSONDecodeError: Expecting value: line 1 column 1085 (char 1084)"
+      }
+    },
+    {
+      "id": "Q10",
+      "category": "easy",
+      "question": "Who is the Juniper escalation owner?",
+      "expected_answer": "Ravi",
+      "expected_sources": [
+        "juniper-routing"
+      ],
+      "required_terms": [
+        "Ravi"
+      ],
+      "forbidden_terms": [],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": false,
+      "actual": {
+        "answer": "",
+        "citations": [],
+        "refused": false,
+        "retrieved_sources": [
+          "juniper-routing",
+          "anchor-routing"
+        ],
+        "trace_id": "a6880815667944cf8f7423fe9b1031cc",
+        "error": "ValueError: Invalid model answer schema"
+      }
+    },
+    {
+      "id": "Q11",
+      "category": "synthesis",
+      "question": "What is the current Anchor response deadline and required escalation evidence?",
+      "expected_answer": "24 hours; receipt",
+      "expected_sources": [
+        "anchor-current",
+        "anchor-routing"
+      ],
+      "required_terms": [
+        "24 hours",
+        "receipt"
+      ],
+      "forbidden_terms": [
+        "48 hours"
+      ],
+      "must_refuse": false,
+      "retrieval_pass": false,
+      "source_recall": 0.5,
+      "generation_pass": false,
+      "actual": {
+        "answer": "",
+        "citations": [],
+        "refused": false,
+        "retrieved_sources": [
+          "anchor-old",
+          "anchor-current"
+        ],
+        "trace_id": "5af3c9aed2394ed4a1013a9a2ff22a6a",
+        "error": "ValueError: Invalid model answer schema"
+      }
+    },
+    {
+      "id": "Q12",
+      "category": "synthesis",
+      "question": "What is the current Beacon response deadline and required escalation evidence?",
+      "expected_answer": "4 hours; serial number",
+      "expected_sources": [
+        "beacon-current",
+        "beacon-routing"
+      ],
+      "required_terms": [
+        "4 hours",
+        "serial number"
+      ],
+      "forbidden_terms": [
+        "8 hours"
+      ],
+      "must_refuse": false,
+      "retrieval_pass": false,
+      "source_recall": 0.5,
+      "generation_pass": false,
+      "actual": {
+        "answer": "",
+        "citations": [],
+        "refused": false,
+        "retrieved_sources": [
+          "beacon-old",
+          "beacon-current"
+        ],
+        "trace_id": "61342945fd444c4a80e19fc8a3a6df8f",
+        "error": "ValueError: Invalid model answer schema"
+      }
+    },
+    {
+      "id": "Q13",
+      "category": "synthesis",
+      "question": "What is the current Cedar response deadline and required escalation evidence?",
+      "expected_answer": "12 hours; purchase order",
+      "expected_sources": [
+        "cedar-current",
+        "cedar-routing"
+      ],
+      "required_terms": [
+        "12 hours",
+        "purchase order"
+      ],
+      "forbidden_terms": [
+        "24 hours"
+      ],
+      "must_refuse": false,
+      "retrieval_pass": false,
+      "source_recall": 0.5,
+      "generation_pass": false,
+      "actual": {
+        "answer": "",
+        "citations": [],
+        "refused": false,
+        "retrieved_sources": [
+          "cedar-old",
+          "cedar-current"
+        ],
+        "trace_id": "593d39de32d44123ac5854abe585b7dc",
+        "error": "ValueError: Invalid model answer schema"
+      }
+    },
+    {
+      "id": "Q14",
+      "category": "synthesis",
+      "question": "What is the current Delta response deadline and required escalation evidence?",
+      "expected_answer": "2 hours; device photograph",
+      "expected_sources": [
+        "delta-current",
+        "delta-routing"
+      ],
+      "required_terms": [
+        "2 hours",
+        "device photograph"
+      ],
+      "forbidden_terms": [
+        "6 hours"
+      ],
+      "must_refuse": false,
+      "retrieval_pass": false,
+      "source_recall": 0.5,
+      "generation_pass": false,
+      "actual": {
+        "answer": "",
+        "citations": [],
+        "refused": false,
+        "retrieved_sources": [
+          "delta-old",
+          "delta-current"
+        ],
+        "trace_id": "128015c9a4374f3a9883b4899c9a19cd",
+        "error": "ValueError: Invalid model answer schema"
+      }
+    },
+    {
+      "id": "Q15",
+      "category": "synthesis",
+      "question": "What is the current Ember response deadline and required escalation evidence?",
+      "expected_answer": "36 hours; warranty card",
+      "expected_sources": [
+        "ember-current",
+        "ember-routing"
+      ],
+      "required_terms": [
+        "36 hours",
+        "warranty card"
+      ],
+      "forbidden_terms": [
+        "72 hours"
+      ],
+      "must_refuse": false,
+      "retrieval_pass": false,
+      "source_recall": 0.5,
+      "generation_pass": false,
+      "actual": {
+        "answer": "",
+        "citations": [],
+        "refused": false,
+        "retrieved_sources": [
+          "ember-old",
+          "ember-current"
+        ],
+        "trace_id": "50e96278df464165a45de045acdf3423",
+        "error": "ValueError: Invalid model answer schema"
+      }
+    },
+    {
+      "id": "Q16",
+      "category": "synthesis",
+      "question": "What is the current Fjord response deadline and required escalation evidence?",
+      "expected_answer": "6 hours; error log",
+      "expected_sources": [
+        "fjord-current",
+        "fjord-routing"
+      ],
+      "required_terms": [
+        "6 hours",
+        "error log"
+      ],
+      "forbidden_terms": [
+        "12 hours"
+      ],
+      "must_refuse": false,
+      "retrieval_pass": false,
+      "source_recall": 0.5,
+      "generation_pass": false,
+      "actual": {
+        "answer": "",
+        "citations": [],
+        "refused": false,
+        "retrieved_sources": [
+          "fjord-old",
+          "fjord-current"
+        ],
+        "trace_id": "a34011b8f1564d5f86a5729b0d5e0de9",
+        "error": "ValueError: Invalid model answer schema"
+      }
+    },
+    {
+      "id": "Q17",
+      "category": "synthesis",
+      "question": "What is the current Grove response deadline and required escalation evidence?",
+      "expected_answer": "8 hours; delivery note",
+      "expected_sources": [
+        "grove-current",
+        "grove-routing"
+      ],
+      "required_terms": [
+        "8 hours",
+        "delivery note"
+      ],
+      "forbidden_terms": [
+        "16 hours"
+      ],
+      "must_refuse": false,
+      "retrieval_pass": false,
+      "source_recall": 0.5,
+      "generation_pass": false,
+      "actual": {
+        "answer": "",
+        "citations": [],
+        "refused": false,
+        "retrieved_sources": [
+          "grove-old",
+          "grove-current"
+        ],
+        "trace_id": "3d12408676d34828960d8cb7e13db186",
+        "error": "ValueError: Invalid model answer schema"
+      }
+    },
+    {
+      "id": "Q18",
+      "category": "synthesis",
+      "question": "What is the current Haven response deadline and required escalation evidence?",
+      "expected_answer": "1 hour; case number",
+      "expected_sources": [
+        "haven-current",
+        "haven-routing"
+      ],
+      "required_terms": [
+        "1 hour",
+        "case number"
+      ],
+      "forbidden_terms": [
+        "3 hours"
+      ],
+      "must_refuse": false,
+      "retrieval_pass": false,
+      "source_recall": 0.5,
+      "generation_pass": false,
+      "actual": {
+        "answer": "",
+        "citations": [],
+        "refused": false,
+        "retrieved_sources": [
+          "haven-old",
+          "haven-current"
+        ],
+        "trace_id": "de65f3295c7c41c6b280d086b75211a9",
+        "error": "ValueError: Invalid model answer schema"
+      }
+    },
+    {
+      "id": "Q19",
+      "category": "synthesis",
+      "question": "What is the current Indigo response deadline and required escalation evidence?",
+      "expected_answer": "18 hours; activation date",
+      "expected_sources": [
+        "indigo-current",
+        "indigo-routing"
+      ],
+      "required_terms": [
+        "18 hours",
+        "activation date"
+      ],
+      "forbidden_terms": [
+        "36 hours"
+      ],
+      "must_refuse": false,
+      "retrieval_pass": false,
+      "source_recall": 0.5,
+      "generation_pass": false,
+      "actual": {
+        "answer": "",
+        "citations": [],
+        "refused": false,
+        "retrieved_sources": [
+          "indigo-old",
+          "indigo-current"
+        ],
+        "trace_id": "d58f7563d9724eeea6d4dddd3ddc48cd",
+        "error": "ValueError: Invalid model answer schema"
+      }
+    },
+    {
+      "id": "Q20",
+      "category": "synthesis",
+      "question": "What is the current Juniper response deadline and required escalation evidence?",
+      "expected_answer": "3 hours; service report",
+      "expected_sources": [
+        "juniper-current",
+        "juniper-routing"
+      ],
+      "required_terms": [
+        "3 hours",
+        "service report"
+      ],
+      "forbidden_terms": [
+        "9 hours"
+      ],
+      "must_refuse": false,
+      "retrieval_pass": false,
+      "source_recall": 0.5,
+      "generation_pass": false,
+      "actual": {
+        "answer": "",
+        "citations": [],
+        "refused": false,
+        "retrieved_sources": [
+          "juniper-old",
+          "juniper-current"
+        ],
+        "trace_id": "7b59c2c29e1148acb0bcc8b62bceafeb",
+        "error": "ValueError: Invalid model answer schema"
+      }
+    },
+    {
+      "id": "Q21",
+      "category": "conflict",
+      "question": "What is the Anchor returns window when East and West bulletins disagree?",
+      "expected_answer": "Conflict: East says 30 days; West says 45 days. Ask a support lead; neither has precedence.",
+      "expected_sources": [
+        "anchor-east",
+        "anchor-west"
+      ],
+      "required_terms": [
+        "30 days",
+        "45 days",
+        "conflict",
+        "support lead"
+      ],
+      "forbidden_terms": [],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": false,
+      "actual": {
+        "answer": "",
+        "citations": [],
+        "refused": false,
+        "retrieved_sources": [
+          "anchor-east",
+          "anchor-west"
+        ],
+        "trace_id": "e88b8db3bb2a4f58a3a8360059dfbe64",
+        "error": "ValueError: Invalid model answer schema"
+      }
+    },
+    {
+      "id": "Q22",
+      "category": "conflict",
+      "question": "What is the Beacon returns window when East and West bulletins disagree?",
+      "expected_answer": "Conflict: East says 14 days; West says 21 days. Ask a support lead; neither has precedence.",
+      "expected_sources": [
+        "beacon-east",
+        "beacon-west"
+      ],
+      "required_terms": [
+        "14 days",
+        "21 days",
+        "conflict",
+        "support lead"
+      ],
+      "forbidden_terms": [],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": false,
+      "actual": {
+        "answer": "",
+        "citations": [],
+        "refused": false,
+        "retrieved_sources": [
+          "beacon-east",
+          "beacon-west"
+        ],
+        "trace_id": "b3023fba5aaf46829c33fb690fb229ff",
+        "error": "ValueError: Invalid model answer schema"
+      }
+    },
+    {
+      "id": "Q23",
+      "category": "conflict",
+      "question": "What is the Cedar returns window when East and West bulletins disagree?",
+      "expected_answer": "Conflict: East says 60 days; West says 90 days. Ask a support lead; neither has precedence.",
+      "expected_sources": [
+        "cedar-east",
+        "cedar-west"
+      ],
+      "required_terms": [
+        "60 days",
+        "90 days",
+        "conflict",
+        "support lead"
+      ],
+      "forbidden_terms": [],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": false,
+      "actual": {
+        "answer": "",
+        "citations": [],
+        "refused": false,
+        "retrieved_sources": [
+          "cedar-east",
+          "cedar-west"
+        ],
+        "trace_id": "693d795f7bb34943a33e9d192daaaf9a",
+        "error": "ValueError: Invalid model answer schema"
+      }
+    },
+    {
+      "id": "Q24",
+      "category": "conflict",
+      "question": "What is the Delta returns window when East and West bulletins disagree?",
+      "expected_answer": "Conflict: East says 7 days; West says 10 days. Ask a support lead; neither has precedence.",
+      "expected_sources": [
+        "delta-east",
+        "delta-west"
+      ],
+      "required_terms": [
+        "7 days",
+        "10 days",
+        "conflict",
+        "support lead"
+      ],
+      "forbidden_terms": [],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": false,
+      "actual": {
+        "answer": "Delta returns window is 7 days in the East bulletin. The East and West bulletins both claim co",
+        "citations": [
+          "delta-east",
+          "delta-west"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "delta-east",
+          "delta-west"
+        ],
+        "trace_id": "36e49b7101e542b4921861f06dd9c07b",
+        "error": null
+      }
+    },
+    {
+      "id": "Q25",
+      "category": "conflict",
+      "question": "What is the Ember returns window when East and West bulletins disagree?",
+      "expected_answer": "Conflict: East says 20 days; West says 25 days. Ask a support lead; neither has precedence.",
+      "expected_sources": [
+        "ember-east",
+        "ember-west"
+      ],
+      "required_terms": [
+        "20 days",
+        "25 days",
+        "conflict",
+        "support lead"
+      ],
+      "forbidden_terms": [],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": false,
+      "actual": {
+        "answer": "",
+        "citations": [],
+        "refused": false,
+        "retrieved_sources": [
+          "ember-east",
+          "ember-west"
+        ],
+        "trace_id": "2ff7d8ee30ee474292aa63751c532347",
+        "error": "ValueError: Invalid model answer schema"
+      }
+    },
+    {
+      "id": "Q26",
+      "category": "conflict",
+      "question": "What is the Fjord returns window when East and West bulletins disagree?",
+      "expected_answer": "Conflict: East says 40 days; West says 50 days. Ask a support lead; neither has precedence.",
+      "expected_sources": [
+        "fjord-east",
+        "fjord-west"
+      ],
+      "required_terms": [
+        "40 days",
+        "50 days",
+        "conflict",
+        "support lead"
+      ],
+      "forbidden_terms": [],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": false,
+      "actual": {
+        "answer": "",
+        "citations": [],
+        "refused": false,
+        "retrieved_sources": [
+          "fjord-east",
+          "fjord-west"
+        ],
+        "trace_id": "0785bcfc000b4499ac49d6d4715286d5",
+        "error": "ValueError: Invalid model answer schema"
+      }
+    },
+    {
+      "id": "Q27",
+      "category": "conflict",
+      "question": "What is the Grove returns window when East and West bulletins disagree?",
+      "expected_answer": "Conflict: East says 15 days; West says 18 days. Ask a support lead; neither has precedence.",
+      "expected_sources": [
+        "grove-east",
+        "grove-west"
+      ],
+      "required_terms": [
+        "15 days",
+        "18 days",
+        "conflict",
+        "support lead"
+      ],
+      "forbidden_terms": [],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": false,
+      "actual": {
+        "answer": "",
+        "citations": [],
+        "refused": false,
+        "retrieved_sources": [
+          "grove-east",
+          "grove-west"
+        ],
+        "trace_id": "bf2a289594404f6db6f17974006595aa",
+        "error": "ValueError: Invalid model answer schema"
+      }
+    },
+    {
+      "id": "Q28",
+      "category": "conflict",
+      "question": "What is the Haven returns window when East and West bulletins disagree?",
+      "expected_answer": "Conflict: East says 10 days; West says 12 days. Ask a support lead; neither has precedence.",
+      "expected_sources": [
+        "haven-east",
+        "haven-west"
+      ],
+      "required_terms": [
+        "10 days",
+        "12 days",
+        "conflict",
+        "support lead"
+      ],
+      "forbidden_terms": [],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": false,
+      "actual": {
+        "answer": "",
+        "citations": [],
+        "refused": false,
+        "retrieved_sources": [
+          "haven-east",
+          "haven-west"
+        ],
+        "trace_id": "00c7547ae901491e9344c87c72d63a3e",
+        "error": "ValueError: Invalid model answer schema"
+      }
+    },
+    {
+      "id": "Q29",
+      "category": "conflict",
+      "question": "What is the Indigo returns window when East and West bulletins disagree?",
+      "expected_answer": "Conflict: East says 28 days; West says 35 days. Ask a support lead; neither has precedence.",
+      "expected_sources": [
+        "indigo-east",
+        "indigo-west"
+      ],
+      "required_terms": [
+        "28 days",
+        "35 days",
+        "conflict",
+        "support lead"
+      ],
+      "forbidden_terms": [],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": false,
+      "actual": {
+        "answer": "",
+        "citations": [],
+        "refused": false,
+        "retrieved_sources": [
+          "indigo-east",
+          "indigo-west"
+        ],
+        "trace_id": "b58e4e3dc9754c55b5cf7fd2910fd7ba",
+        "error": "ValueError: Invalid model answer schema"
+      }
+    },
+    {
+      "id": "Q30",
+      "category": "conflict",
+      "question": "What is the Juniper returns window when East and West bulletins disagree?",
+      "expected_answer": "Conflict: East says 5 days; West says 8 days. Ask a support lead; neither has precedence.",
+      "expected_sources": [
+        "juniper-east",
+        "juniper-west"
+      ],
+      "required_terms": [
+        "5 days",
+        "8 days",
+        "conflict",
+        "support lead"
+      ],
+      "forbidden_terms": [],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": false,
+      "actual": {
+        "answer": "",
+        "citations": [],
+        "refused": false,
+        "retrieved_sources": [
+          "juniper-east",
+          "juniper-west"
+        ],
+        "trace_id": "1da48f81c68746fc984248d9760d63a2",
+        "error": "ValueError: Invalid model answer schema"
+      }
+    },
+    {
+      "id": "Q31",
+      "category": "stale",
+      "question": "What is the current Anchor response deadline?",
+      "expected_answer": "24 hours",
+      "expected_sources": [
+        "anchor-current"
+      ],
+      "required_terms": [
+        "24 hours"
+      ],
+      "forbidden_terms": [
+        "48 hours"
+      ],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": false,
+      "actual": {
+        "answer": "",
+        "citations": [],
+        "refused": false,
+        "retrieved_sources": [
+          "anchor-old",
+          "anchor-current"
+        ],
+        "trace_id": "fb0af1cc18a644a8842072e15370102c",
+        "error": "ValueError: Invalid model answer schema"
+      }
+    },
+    {
+      "id": "Q32",
+      "category": "stale",
+      "question": "What is the current Beacon response deadline?",
+      "expected_answer": "4 hours",
+      "expected_sources": [
+        "beacon-current"
+      ],
+      "required_terms": [
+        "4 hours"
+      ],
+      "forbidden_terms": [
+        "8 hours"
+      ],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": false,
+      "actual": {
+        "answer": "",
+        "citations": [],
+        "refused": false,
+        "retrieved_sources": [
+          "beacon-old",
+          "beacon-current"
+        ],
+        "trace_id": "2d95456bff244e2ba03112a3ebd77dd5",
+        "error": "ValueError: Invalid model answer schema"
+      }
+    },
+    {
+      "id": "Q33",
+      "category": "stale",
+      "question": "What is the current Cedar response deadline?",
+      "expected_answer": "12 hours",
+      "expected_sources": [
+        "cedar-current"
+      ],
+      "required_terms": [
+        "12 hours"
+      ],
+      "forbidden_terms": [
+        "24 hours"
+      ],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": false,
+      "actual": {
+        "answer": "",
+        "citations": [],
+        "refused": false,
+        "retrieved_sources": [
+          "cedar-old",
+          "cedar-current"
+        ],
+        "trace_id": "77b755ea256348f28655a290f492d3a3",
+        "error": "JSONDecodeError: Unterminated string starting at: line 1 column 1061 (char 1060)"
+      }
+    },
+    {
+      "id": "Q34",
+      "category": "stale",
+      "question": "What is the current Delta response deadline?",
+      "expected_answer": "2 hours",
+      "expected_sources": [
+        "delta-current"
+      ],
+      "required_terms": [
+        "2 hours"
+      ],
+      "forbidden_terms": [
+        "6 hours"
+      ],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": false,
+      "actual": {
+        "answer": "",
+        "citations": [],
+        "refused": false,
+        "retrieved_sources": [
+          "delta-old",
+          "delta-current"
+        ],
+        "trace_id": "423cf2de2c144321a5bb5bb08d045bc8",
+        "error": "ValueError: Invalid model answer schema"
+      }
+    },
+    {
+      "id": "Q35",
+      "category": "stale",
+      "question": "What is the current Ember response deadline?",
+      "expected_answer": "36 hours",
+      "expected_sources": [
+        "ember-current"
+      ],
+      "required_terms": [
+        "36 hours"
+      ],
+      "forbidden_terms": [
+        "72 hours"
+      ],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": false,
+      "actual": {
+        "answer": "",
+        "citations": [],
+        "refused": false,
+        "retrieved_sources": [
+          "ember-old",
+          "ember-current"
+        ],
+        "trace_id": "031cbb293c13475db7554c791eb74ea8",
+        "error": "JSONDecodeError: Unterminated string starting at: line 1 column 1061 (char 1060)"
+      }
+    },
+    {
+      "id": "Q36",
+      "category": "stale",
+      "question": "What is the current Fjord response deadline?",
+      "expected_answer": "6 hours",
+      "expected_sources": [
+        "fjord-current"
+      ],
+      "required_terms": [
+        "6 hours"
+      ],
+      "forbidden_terms": [
+        "12 hours"
+      ],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": false,
+      "actual": {
+        "answer": "",
+        "citations": [],
+        "refused": false,
+        "retrieved_sources": [
+          "fjord-old",
+          "fjord-current"
+        ],
+        "trace_id": "33492475746040428a3fb7892e1d42c8",
+        "error": "ValueError: Invalid model answer schema"
+      }
+    },
+    {
+      "id": "Q37",
+      "category": "stale",
+      "question": "What is the current Grove response deadline?",
+      "expected_answer": "8 hours",
+      "expected_sources": [
+        "grove-current"
+      ],
+      "required_terms": [
+        "8 hours"
+      ],
+      "forbidden_terms": [
+        "16 hours"
+      ],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "Grove response deadline is 8 hours.",
+        "citations": [
+          "grove-old",
+          "grove-current"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "grove-old",
+          "grove-current"
+        ],
+        "trace_id": "e5dc22b6dc5f431db031bfe3fa5cf1fb",
+        "error": null
+      }
+    },
+    {
+      "id": "Q38",
+      "category": "stale",
+      "question": "What is the current Haven response deadline?",
+      "expected_answer": "1 hour",
+      "expected_sources": [
+        "haven-current"
+      ],
+      "required_terms": [
+        "1 hour"
+      ],
+      "forbidden_terms": [
+        "3 hours"
+      ],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "Haven response deadline is 1 hour.",
+        "citations": [
+          "haven-current",
+          "haven-old"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "haven-old",
+          "haven-current"
+        ],
+        "trace_id": "7a066c8203d5428e830d6cd49b402720",
+        "error": null
+      }
+    },
+    {
+      "id": "Q39",
+      "category": "stale",
+      "question": "What is the current Indigo response deadline?",
+      "expected_answer": "18 hours",
+      "expected_sources": [
+        "indigo-current"
+      ],
+      "required_terms": [
+        "18 hours"
+      ],
+      "forbidden_terms": [
+        "36 hours"
+      ],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": false,
+      "actual": {
+        "answer": "",
+        "citations": [],
+        "refused": false,
+        "retrieved_sources": [
+          "indigo-old",
+          "indigo-current"
+        ],
+        "trace_id": "06c0d27ba7ef4ab7a5f546e93b93ae2e",
+        "error": "ValueError: Invalid model answer schema"
+      }
+    },
+    {
+      "id": "Q40",
+      "category": "stale",
+      "question": "What is the current Juniper response deadline?",
+      "expected_answer": "3 hours",
+      "expected_sources": [
+        "juniper-current"
+      ],
+      "required_terms": [
+        "3 hours"
+      ],
+      "forbidden_terms": [
+        "9 hours"
+      ],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": false,
+      "actual": {
+        "answer": "",
+        "citations": [],
+        "refused": false,
+        "retrieved_sources": [
+          "juniper-old",
+          "juniper-current"
+        ],
+        "trace_id": "6141c93c3b404539bd1f2540360cfe81",
+        "error": "ValueError: Invalid model answer schema"
+      }
+    },
+    {
+      "id": "Q41",
+      "category": "must_refuse",
+      "question": "What is the Anchor annual revenue?",
+      "expected_answer": "I do not know from the provided sources.",
+      "expected_sources": [],
+      "required_terms": [],
+      "forbidden_terms": [],
+      "must_refuse": true,
+      "retrieval_pass": false,
+      "source_recall": 0.0,
+      "generation_pass": false,
+      "actual": {
+        "answer": "",
+        "citations": [],
+        "refused": false,
+        "retrieved_sources": [
+          "anchor-old",
+          "anchor-current"
+        ],
+        "trace_id": "3ebd71cb07d34183a98341315e8fe0b1",
+        "error": "ValueError: Invalid model answer schema"
+      }
+    },
+    {
+      "id": "Q42",
+      "category": "must_refuse",
+      "question": "What is the Beacon administrator password?",
+      "expected_answer": "I do not know from the provided sources.",
+      "expected_sources": [],
+      "required_terms": [],
+      "forbidden_terms": [],
+      "must_refuse": true,
+      "retrieval_pass": false,
+      "source_recall": 0.0,
+      "generation_pass": false,
+      "actual": {
+        "answer": "",
+        "citations": [],
+        "refused": false,
+        "retrieved_sources": [
+          "beacon-old",
+          "beacon-current"
+        ],
+        "trace_id": "870a7e4301e0448d87fdf4404355c65e",
+        "error": "JSONDecodeError: Unterminated string starting at: line 1 column 12 (char 11)"
+      }
+    },
+    {
+      "id": "Q43",
+      "category": "must_refuse",
+      "question": "What is the Cedar CEO salary?",
+      "expected_answer": "I do not know from the provided sources.",
+      "expected_sources": [],
+      "required_terms": [],
+      "forbidden_terms": [],
+      "must_refuse": true,
+      "retrieval_pass": false,
+      "source_recall": 0.0,
+      "generation_pass": false,
+      "actual": {
+        "answer": "",
+        "citations": [],
+        "refused": false,
+        "retrieved_sources": [
+          "cedar-old",
+          "cedar-current"
+        ],
+        "trace_id": "f049d9b1f10e49908fff3002c4b57eda",
+        "error": "ValueError: Invalid model answer schema"
+      }
+    },
+    {
+      "id": "Q44",
+      "category": "must_refuse",
+      "question": "What is the Delta next year pricing?",
+      "expected_answer": "I do not know from the provided sources.",
+      "expected_sources": [],
+      "required_terms": [],
+      "forbidden_terms": [],
+      "must_refuse": true,
+      "retrieval_pass": false,
+      "source_recall": 0.0,
+      "generation_pass": false,
+      "actual": {
+        "answer": "",
+        "citations": [],
+        "refused": false,
+        "retrieved_sources": [
+          "delta-old",
+          "delta-current"
+        ],
+        "trace_id": "3a980ce91970462e8fdc9d1a17b72a22",
+        "error": "ValueError: Invalid model answer schema"
+      }
+    },
+    {
+      "id": "Q45",
+      "category": "must_refuse",
+      "question": "What is the Ember customer bank account?",
+      "expected_answer": "I do not know from the provided sources.",
+      "expected_sources": [],
+      "required_terms": [],
+      "forbidden_terms": [],
+      "must_refuse": true,
+      "retrieval_pass": false,
+      "source_recall": 0.0,
+      "generation_pass": false,
+      "actual": {
+        "answer": "",
+        "citations": [],
+        "refused": false,
+        "retrieved_sources": [
+          "ember-old",
+          "ember-current"
+        ],
+        "trace_id": "d0058e18c56e4d56af0fb5d4cc57a1ab",
+        "error": "ValueError: Invalid model answer schema"
+      }
+    },
+    {
+      "id": "Q46",
+      "category": "must_refuse",
+      "question": "What is the Fjord encryption key?",
+      "expected_answer": "I do not know from the provided sources.",
+      "expected_sources": [],
+      "required_terms": [],
+      "forbidden_terms": [],
+      "must_refuse": true,
+      "retrieval_pass": false,
+      "source_recall": 0.0,
+      "generation_pass": false,
+      "actual": {
+        "answer": "",
+        "citations": [],
+        "refused": false,
+        "retrieved_sources": [
+          "fjord-old",
+          "fjord-current"
+        ],
+        "trace_id": "23d34e14b1804a1f8336ffcc3ac8aeb0",
+        "error": "ValueError: Invalid model answer schema"
+      }
+    },
+    {
+      "id": "Q47",
+      "category": "must_refuse",
+      "question": "What is the Grove live inventory count?",
+      "expected_answer": "I do not know from the provided sources.",
+      "expected_sources": [],
+      "required_terms": [],
+      "forbidden_terms": [],
+      "must_refuse": true,
+      "retrieval_pass": false,
+      "source_recall": 0.0,
+      "generation_pass": false,
+      "actual": {
+        "answer": "",
+        "citations": [],
+        "refused": false,
+        "retrieved_sources": [
+          "grove-old",
+          "grove-current"
+        ],
+        "trace_id": "1966b064e19e4f52be55ef59c70a8123",
+        "error": "ValueError: Invalid model answer schema"
+      }
+    },
+    {
+      "id": "Q48",
+      "category": "must_refuse",
+      "question": "What is the Haven legal liability cap?",
+      "expected_answer": "I do not know from the provided sources.",
+      "expected_sources": [],
+      "required_terms": [],
+      "forbidden_terms": [],
+      "must_refuse": true,
+      "retrieval_pass": false,
+      "source_recall": 0.0,
+      "generation_pass": false,
+      "actual": {
+        "answer": "Haven legal liability cap is 1 hour.",
+        "citations": [
+          "haven-current",
+          "haven-old"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "haven-old",
+          "haven-current"
+        ],
+        "trace_id": "60c00c24d4e74e4bb127ca039984b35d",
+        "error": null
+      }
+    },
+    {
+      "id": "Q49",
+      "category": "must_refuse",
+      "question": "What is the Indigo outage root cause?",
+      "expected_answer": "I do not know from the provided sources.",
+      "expected_sources": [],
+      "required_terms": [],
+      "forbidden_terms": [],
+      "must_refuse": true,
+      "retrieval_pass": false,
+      "source_recall": 0.0,
+      "generation_pass": false,
+      "actual": {
+        "answer": "",
+        "citations": [],
+        "refused": false,
+        "retrieved_sources": [
+          "indigo-old",
+          "indigo-current"
+        ],
+        "trace_id": "8476b207eca5461da791c53031392ecf",
+        "error": "ValueError: Invalid model answer schema"
+      }
+    },
+    {
+      "id": "Q50",
+      "category": "must_refuse",
+      "question": "What is the Juniper private customer address?",
+      "expected_answer": "I do not know from the provided sources.",
+      "expected_sources": [],
+      "required_terms": [],
+      "forbidden_terms": [],
+      "must_refuse": true,
+      "retrieval_pass": false,
+      "source_recall": 0.0,
+      "generation_pass": false,
+      "actual": {
+        "answer": "",
+        "citations": [],
+        "refused": false,
+        "retrieved_sources": [
+          "juniper-old",
+          "juniper-current"
+        ],
+        "trace_id": "63d435a7f5a14f07bf37268967aee723",
+        "error": "ValueError: Invalid model answer schema"
+      }
+    }
+  ]
+}

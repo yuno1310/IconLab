@@ -1,0 +1,1734 @@
+{
+  "summary": {
+    "recorded_at": "2026-09-13T21:41:00.566954+00:00",
+    "python": "3.12.14",
+    "backend": "fixture",
+    "mode": "improved",
+    "n": 50,
+    "golden_sha256": "48c373efb3f18a8e9c417fc877b1fdd07fc51bd09a10c62b52129a3b188f13a3",
+    "corpus_sha256": "96a7eae730ec65601aadf1b63836a5f848a48ec5f03844b926d36faaf7b92410",
+    "retrieval_passes": 50,
+    "generation_passes": 48,
+    "errors": 0,
+    "categories": {
+      "easy": 10,
+      "synthesis": 10,
+      "conflict": 10,
+      "stale": 10,
+      "must_refuse": 10
+    },
+    "warning": "Fixture results are deterministic test-double results, not model quality evidence."
+  },
+  "rows": [
+    {
+      "id": "Q01",
+      "category": "easy",
+      "question": "Who is the Anchor escalation owner?",
+      "expected_answer": "Mira",
+      "expected_sources": [
+        "anchor-routing"
+      ],
+      "required_terms": [
+        "Mira"
+      ],
+      "forbidden_terms": [],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "Anchor escalation owner is Mira. Required escalation evidence is receipt. Escalation requires human approval.\nBeacon escalation owner is Noah. Required escalation evidence is serial number. Escalation requires human approval.\nCedar escalation owner is Iris. Required escalation evidence is purchase order. Escalation requires human approval.\nDelta escalation owner is Omar. Required escalation evidence is device photograph. Escalation requires human approval.",
+        "citations": [
+          "anchor-routing",
+          "beacon-routing",
+          "cedar-routing",
+          "delta-routing"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "anchor-routing",
+          "beacon-routing",
+          "cedar-routing",
+          "delta-routing"
+        ],
+        "trace_id": "d389f93f9ac44392a3de3d6eab19e068",
+        "error": null
+      }
+    },
+    {
+      "id": "Q02",
+      "category": "easy",
+      "question": "Who is the Beacon escalation owner?",
+      "expected_answer": "Noah",
+      "expected_sources": [
+        "beacon-routing"
+      ],
+      "required_terms": [
+        "Noah"
+      ],
+      "forbidden_terms": [],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "Beacon escalation owner is Noah. Required escalation evidence is serial number. Escalation requires human approval.\nAnchor escalation owner is Mira. Required escalation evidence is receipt. Escalation requires human approval.\nCedar escalation owner is Iris. Required escalation evidence is purchase order. Escalation requires human approval.\nDelta escalation owner is Omar. Required escalation evidence is device photograph. Escalation requires human approval.",
+        "citations": [
+          "beacon-routing",
+          "anchor-routing",
+          "cedar-routing",
+          "delta-routing"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "beacon-routing",
+          "anchor-routing",
+          "cedar-routing",
+          "delta-routing"
+        ],
+        "trace_id": "787284e070ef413488f51734b3caecfa",
+        "error": null
+      }
+    },
+    {
+      "id": "Q03",
+      "category": "easy",
+      "question": "Who is the Cedar escalation owner?",
+      "expected_answer": "Iris",
+      "expected_sources": [
+        "cedar-routing"
+      ],
+      "required_terms": [
+        "Iris"
+      ],
+      "forbidden_terms": [],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "Cedar escalation owner is Iris. Required escalation evidence is purchase order. Escalation requires human approval.\nAnchor escalation owner is Mira. Required escalation evidence is receipt. Escalation requires human approval.\nBeacon escalation owner is Noah. Required escalation evidence is serial number. Escalation requires human approval.\nDelta escalation owner is Omar. Required escalation evidence is device photograph. Escalation requires human approval.",
+        "citations": [
+          "cedar-routing",
+          "anchor-routing",
+          "beacon-routing",
+          "delta-routing"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "cedar-routing",
+          "anchor-routing",
+          "beacon-routing",
+          "delta-routing"
+        ],
+        "trace_id": "3a8083ad1b44440392540f0dbbdf94d6",
+        "error": null
+      }
+    },
+    {
+      "id": "Q04",
+      "category": "easy",
+      "question": "Who is the Delta escalation owner?",
+      "expected_answer": "Omar",
+      "expected_sources": [
+        "delta-routing"
+      ],
+      "required_terms": [
+        "Omar"
+      ],
+      "forbidden_terms": [],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "Delta escalation owner is Omar. Required escalation evidence is device photograph. Escalation requires human approval.\nAnchor escalation owner is Mira. Required escalation evidence is receipt. Escalation requires human approval.\nBeacon escalation owner is Noah. Required escalation evidence is serial number. Escalation requires human approval.\nCedar escalation owner is Iris. Required escalation evidence is purchase order. Escalation requires human approval.",
+        "citations": [
+          "delta-routing",
+          "anchor-routing",
+          "beacon-routing",
+          "cedar-routing"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "delta-routing",
+          "anchor-routing",
+          "beacon-routing",
+          "cedar-routing"
+        ],
+        "trace_id": "313de673b0ba46e5a1b97ace69856b01",
+        "error": null
+      }
+    },
+    {
+      "id": "Q05",
+      "category": "easy",
+      "question": "Who is the Ember escalation owner?",
+      "expected_answer": "Lina",
+      "expected_sources": [
+        "ember-routing"
+      ],
+      "required_terms": [
+        "Lina"
+      ],
+      "forbidden_terms": [],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "Ember escalation owner is Lina. Required escalation evidence is warranty card. Escalation requires human approval.\nAnchor escalation owner is Mira. Required escalation evidence is receipt. Escalation requires human approval.\nBeacon escalation owner is Noah. Required escalation evidence is serial number. Escalation requires human approval.\nCedar escalation owner is Iris. Required escalation evidence is purchase order. Escalation requires human approval.",
+        "citations": [
+          "ember-routing",
+          "anchor-routing",
+          "beacon-routing",
+          "cedar-routing"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "ember-routing",
+          "anchor-routing",
+          "beacon-routing",
+          "cedar-routing"
+        ],
+        "trace_id": "5d1fecaeea604ed5b9141976159c4c3a",
+        "error": null
+      }
+    },
+    {
+      "id": "Q06",
+      "category": "easy",
+      "question": "Who is the Fjord escalation owner?",
+      "expected_answer": "Theo",
+      "expected_sources": [
+        "fjord-routing"
+      ],
+      "required_terms": [
+        "Theo"
+      ],
+      "forbidden_terms": [],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "Fjord escalation owner is Theo. Required escalation evidence is error log. Escalation requires human approval.\nAnchor escalation owner is Mira. Required escalation evidence is receipt. Escalation requires human approval.\nBeacon escalation owner is Noah. Required escalation evidence is serial number. Escalation requires human approval.\nCedar escalation owner is Iris. Required escalation evidence is purchase order. Escalation requires human approval.",
+        "citations": [
+          "fjord-routing",
+          "anchor-routing",
+          "beacon-routing",
+          "cedar-routing"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "fjord-routing",
+          "anchor-routing",
+          "beacon-routing",
+          "cedar-routing"
+        ],
+        "trace_id": "43bc41a450b94e7aaa647dd590dd64ad",
+        "error": null
+      }
+    },
+    {
+      "id": "Q07",
+      "category": "easy",
+      "question": "Who is the Grove escalation owner?",
+      "expected_answer": "Ada",
+      "expected_sources": [
+        "grove-routing"
+      ],
+      "required_terms": [
+        "Ada"
+      ],
+      "forbidden_terms": [],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "Grove escalation owner is Ada. Required escalation evidence is delivery note. Escalation requires human approval.\nAnchor escalation owner is Mira. Required escalation evidence is receipt. Escalation requires human approval.\nBeacon escalation owner is Noah. Required escalation evidence is serial number. Escalation requires human approval.\nCedar escalation owner is Iris. Required escalation evidence is purchase order. Escalation requires human approval.",
+        "citations": [
+          "grove-routing",
+          "anchor-routing",
+          "beacon-routing",
+          "cedar-routing"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "grove-routing",
+          "anchor-routing",
+          "beacon-routing",
+          "cedar-routing"
+        ],
+        "trace_id": "9612e810e7af4b21a719a808a9a2706c",
+        "error": null
+      }
+    },
+    {
+      "id": "Q08",
+      "category": "easy",
+      "question": "Who is the Haven escalation owner?",
+      "expected_answer": "Zara",
+      "expected_sources": [
+        "haven-routing"
+      ],
+      "required_terms": [
+        "Zara"
+      ],
+      "forbidden_terms": [],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "Haven escalation owner is Zara. Required escalation evidence is case number. Escalation requires human approval.\nAnchor escalation owner is Mira. Required escalation evidence is receipt. Escalation requires human approval.\nBeacon escalation owner is Noah. Required escalation evidence is serial number. Escalation requires human approval.\nCedar escalation owner is Iris. Required escalation evidence is purchase order. Escalation requires human approval.",
+        "citations": [
+          "haven-routing",
+          "anchor-routing",
+          "beacon-routing",
+          "cedar-routing"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "haven-routing",
+          "anchor-routing",
+          "beacon-routing",
+          "cedar-routing"
+        ],
+        "trace_id": "af1973f3dab14bdead958c57b60207d9",
+        "error": null
+      }
+    },
+    {
+      "id": "Q09",
+      "category": "easy",
+      "question": "Who is the Indigo escalation owner?",
+      "expected_answer": "Eli",
+      "expected_sources": [
+        "indigo-routing"
+      ],
+      "required_terms": [
+        "Eli"
+      ],
+      "forbidden_terms": [],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "Indigo escalation owner is Eli. Required escalation evidence is activation date. Escalation requires human approval.\nAnchor escalation owner is Mira. Required escalation evidence is receipt. Escalation requires human approval.\nBeacon escalation owner is Noah. Required escalation evidence is serial number. Escalation requires human approval.\nCedar escalation owner is Iris. Required escalation evidence is purchase order. Escalation requires human approval.",
+        "citations": [
+          "indigo-routing",
+          "anchor-routing",
+          "beacon-routing",
+          "cedar-routing"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "indigo-routing",
+          "anchor-routing",
+          "beacon-routing",
+          "cedar-routing"
+        ],
+        "trace_id": "29dbb64411f644e29ecac2ddcd7038cc",
+        "error": null
+      }
+    },
+    {
+      "id": "Q10",
+      "category": "easy",
+      "question": "Who is the Juniper escalation owner?",
+      "expected_answer": "Ravi",
+      "expected_sources": [
+        "juniper-routing"
+      ],
+      "required_terms": [
+        "Ravi"
+      ],
+      "forbidden_terms": [],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "Juniper escalation owner is Ravi. Required escalation evidence is service report. Escalation requires human approval.\nAnchor escalation owner is Mira. Required escalation evidence is receipt. Escalation requires human approval.\nBeacon escalation owner is Noah. Required escalation evidence is serial number. Escalation requires human approval.\nCedar escalation owner is Iris. Required escalation evidence is purchase order. Escalation requires human approval.",
+        "citations": [
+          "juniper-routing",
+          "anchor-routing",
+          "beacon-routing",
+          "cedar-routing"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "juniper-routing",
+          "anchor-routing",
+          "beacon-routing",
+          "cedar-routing"
+        ],
+        "trace_id": "6589418c1dde410aaff997f8549b32cc",
+        "error": null
+      }
+    },
+    {
+      "id": "Q11",
+      "category": "synthesis",
+      "question": "What is the current Anchor response deadline and required escalation evidence?",
+      "expected_answer": "24 hours; receipt",
+      "expected_sources": [
+        "anchor-current",
+        "anchor-routing"
+      ],
+      "required_terms": [
+        "24 hours",
+        "receipt"
+      ],
+      "forbidden_terms": [
+        "48 hours"
+      ],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "Anchor escalation owner is Mira. Required escalation evidence is receipt. Escalation requires human approval.\nAnchor response deadline is 24 hours. This policy supersedes the 2025 response policy. Coverage applies to staffed business hours only.\nBeacon escalation owner is Noah. Required escalation evidence is serial number. Escalation requires human approval.\nCedar escalation owner is Iris. Required escalation evidence is purchase order. Escalation requires human approval.",
+        "citations": [
+          "anchor-routing",
+          "anchor-current",
+          "beacon-routing",
+          "cedar-routing"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "anchor-routing",
+          "anchor-current",
+          "beacon-routing",
+          "cedar-routing"
+        ],
+        "trace_id": "abad3b959f414cf1bf84b95f4e8b76c3",
+        "error": null
+      }
+    },
+    {
+      "id": "Q12",
+      "category": "synthesis",
+      "question": "What is the current Beacon response deadline and required escalation evidence?",
+      "expected_answer": "4 hours; serial number",
+      "expected_sources": [
+        "beacon-current",
+        "beacon-routing"
+      ],
+      "required_terms": [
+        "4 hours",
+        "serial number"
+      ],
+      "forbidden_terms": [
+        "8 hours"
+      ],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "Beacon escalation owner is Noah. Required escalation evidence is serial number. Escalation requires human approval.\nBeacon response deadline is 4 hours. This policy supersedes the 2025 response policy. Coverage applies to staffed business hours only.\nAnchor escalation owner is Mira. Required escalation evidence is receipt. Escalation requires human approval.\nCedar escalation owner is Iris. Required escalation evidence is purchase order. Escalation requires human approval.",
+        "citations": [
+          "beacon-routing",
+          "beacon-current",
+          "anchor-routing",
+          "cedar-routing"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "beacon-routing",
+          "beacon-current",
+          "anchor-routing",
+          "cedar-routing"
+        ],
+        "trace_id": "5e51a94217094cc283123ad21eec14a8",
+        "error": null
+      }
+    },
+    {
+      "id": "Q13",
+      "category": "synthesis",
+      "question": "What is the current Cedar response deadline and required escalation evidence?",
+      "expected_answer": "12 hours; purchase order",
+      "expected_sources": [
+        "cedar-current",
+        "cedar-routing"
+      ],
+      "required_terms": [
+        "12 hours",
+        "purchase order"
+      ],
+      "forbidden_terms": [
+        "24 hours"
+      ],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "Cedar escalation owner is Iris. Required escalation evidence is purchase order. Escalation requires human approval.\nCedar response deadline is 12 hours. This policy supersedes the 2025 response policy. Coverage applies to staffed business hours only.\nAnchor escalation owner is Mira. Required escalation evidence is receipt. Escalation requires human approval.\nBeacon escalation owner is Noah. Required escalation evidence is serial number. Escalation requires human approval.",
+        "citations": [
+          "cedar-routing",
+          "cedar-current",
+          "anchor-routing",
+          "beacon-routing"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "cedar-routing",
+          "cedar-current",
+          "anchor-routing",
+          "beacon-routing"
+        ],
+        "trace_id": "74310a6199d647ccaa6202cb3a350cb4",
+        "error": null
+      }
+    },
+    {
+      "id": "Q14",
+      "category": "synthesis",
+      "question": "What is the current Delta response deadline and required escalation evidence?",
+      "expected_answer": "2 hours; device photograph",
+      "expected_sources": [
+        "delta-current",
+        "delta-routing"
+      ],
+      "required_terms": [
+        "2 hours",
+        "device photograph"
+      ],
+      "forbidden_terms": [
+        "6 hours"
+      ],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "Delta escalation owner is Omar. Required escalation evidence is device photograph. Escalation requires human approval.\nDelta response deadline is 2 hours. This policy supersedes the 2025 response policy. Coverage applies to staffed business hours only.\nAnchor escalation owner is Mira. Required escalation evidence is receipt. Escalation requires human approval.\nBeacon escalation owner is Noah. Required escalation evidence is serial number. Escalation requires human approval.",
+        "citations": [
+          "delta-routing",
+          "delta-current",
+          "anchor-routing",
+          "beacon-routing"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "delta-routing",
+          "delta-current",
+          "anchor-routing",
+          "beacon-routing"
+        ],
+        "trace_id": "ee8268961efd4892957fed48d31ccca9",
+        "error": null
+      }
+    },
+    {
+      "id": "Q15",
+      "category": "synthesis",
+      "question": "What is the current Ember response deadline and required escalation evidence?",
+      "expected_answer": "36 hours; warranty card",
+      "expected_sources": [
+        "ember-current",
+        "ember-routing"
+      ],
+      "required_terms": [
+        "36 hours",
+        "warranty card"
+      ],
+      "forbidden_terms": [
+        "72 hours"
+      ],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "Ember escalation owner is Lina. Required escalation evidence is warranty card. Escalation requires human approval.\nEmber response deadline is 36 hours. This policy supersedes the 2025 response policy. Coverage applies to staffed business hours only.\nAnchor escalation owner is Mira. Required escalation evidence is receipt. Escalation requires human approval.\nBeacon escalation owner is Noah. Required escalation evidence is serial number. Escalation requires human approval.",
+        "citations": [
+          "ember-routing",
+          "ember-current",
+          "anchor-routing",
+          "beacon-routing"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "ember-routing",
+          "ember-current",
+          "anchor-routing",
+          "beacon-routing"
+        ],
+        "trace_id": "b172f554cc12443aa614eeeddb9f8c0b",
+        "error": null
+      }
+    },
+    {
+      "id": "Q16",
+      "category": "synthesis",
+      "question": "What is the current Fjord response deadline and required escalation evidence?",
+      "expected_answer": "6 hours; error log",
+      "expected_sources": [
+        "fjord-current",
+        "fjord-routing"
+      ],
+      "required_terms": [
+        "6 hours",
+        "error log"
+      ],
+      "forbidden_terms": [
+        "12 hours"
+      ],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "Fjord escalation owner is Theo. Required escalation evidence is error log. Escalation requires human approval.\nFjord response deadline is 6 hours. This policy supersedes the 2025 response policy. Coverage applies to staffed business hours only.\nAnchor escalation owner is Mira. Required escalation evidence is receipt. Escalation requires human approval.\nBeacon escalation owner is Noah. Required escalation evidence is serial number. Escalation requires human approval.",
+        "citations": [
+          "fjord-routing",
+          "fjord-current",
+          "anchor-routing",
+          "beacon-routing"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "fjord-routing",
+          "fjord-current",
+          "anchor-routing",
+          "beacon-routing"
+        ],
+        "trace_id": "d64c51fe9cf24c9388a3b72e358ea875",
+        "error": null
+      }
+    },
+    {
+      "id": "Q17",
+      "category": "synthesis",
+      "question": "What is the current Grove response deadline and required escalation evidence?",
+      "expected_answer": "8 hours; delivery note",
+      "expected_sources": [
+        "grove-current",
+        "grove-routing"
+      ],
+      "required_terms": [
+        "8 hours",
+        "delivery note"
+      ],
+      "forbidden_terms": [
+        "16 hours"
+      ],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "Grove escalation owner is Ada. Required escalation evidence is delivery note. Escalation requires human approval.\nGrove response deadline is 8 hours. This policy supersedes the 2025 response policy. Coverage applies to staffed business hours only.\nAnchor escalation owner is Mira. Required escalation evidence is receipt. Escalation requires human approval.\nBeacon escalation owner is Noah. Required escalation evidence is serial number. Escalation requires human approval.",
+        "citations": [
+          "grove-routing",
+          "grove-current",
+          "anchor-routing",
+          "beacon-routing"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "grove-routing",
+          "grove-current",
+          "anchor-routing",
+          "beacon-routing"
+        ],
+        "trace_id": "c883c59fb9104ef5a425252288737e74",
+        "error": null
+      }
+    },
+    {
+      "id": "Q18",
+      "category": "synthesis",
+      "question": "What is the current Haven response deadline and required escalation evidence?",
+      "expected_answer": "1 hour; case number",
+      "expected_sources": [
+        "haven-current",
+        "haven-routing"
+      ],
+      "required_terms": [
+        "1 hour",
+        "case number"
+      ],
+      "forbidden_terms": [
+        "3 hours"
+      ],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "Haven escalation owner is Zara. Required escalation evidence is case number. Escalation requires human approval.\nHaven response deadline is 1 hour. This policy supersedes the 2025 response policy. Coverage applies to staffed business hours only.\nAnchor escalation owner is Mira. Required escalation evidence is receipt. Escalation requires human approval.\nBeacon escalation owner is Noah. Required escalation evidence is serial number. Escalation requires human approval.",
+        "citations": [
+          "haven-routing",
+          "haven-current",
+          "anchor-routing",
+          "beacon-routing"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "haven-routing",
+          "haven-current",
+          "anchor-routing",
+          "beacon-routing"
+        ],
+        "trace_id": "edf76f5b17bf4e18b414a3353a25b32c",
+        "error": null
+      }
+    },
+    {
+      "id": "Q19",
+      "category": "synthesis",
+      "question": "What is the current Indigo response deadline and required escalation evidence?",
+      "expected_answer": "18 hours; activation date",
+      "expected_sources": [
+        "indigo-current",
+        "indigo-routing"
+      ],
+      "required_terms": [
+        "18 hours",
+        "activation date"
+      ],
+      "forbidden_terms": [
+        "36 hours"
+      ],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "Indigo escalation owner is Eli. Required escalation evidence is activation date. Escalation requires human approval.\nIndigo response deadline is 18 hours. This policy supersedes the 2025 response policy. Coverage applies to staffed business hours only.\nAnchor escalation owner is Mira. Required escalation evidence is receipt. Escalation requires human approval.\nBeacon escalation owner is Noah. Required escalation evidence is serial number. Escalation requires human approval.",
+        "citations": [
+          "indigo-routing",
+          "indigo-current",
+          "anchor-routing",
+          "beacon-routing"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "indigo-routing",
+          "indigo-current",
+          "anchor-routing",
+          "beacon-routing"
+        ],
+        "trace_id": "b99c34a979384b2797e293030975be8d",
+        "error": null
+      }
+    },
+    {
+      "id": "Q20",
+      "category": "synthesis",
+      "question": "What is the current Juniper response deadline and required escalation evidence?",
+      "expected_answer": "3 hours; service report",
+      "expected_sources": [
+        "juniper-current",
+        "juniper-routing"
+      ],
+      "required_terms": [
+        "3 hours",
+        "service report"
+      ],
+      "forbidden_terms": [
+        "9 hours"
+      ],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "Juniper escalation owner is Ravi. Required escalation evidence is service report. Escalation requires human approval.\nJuniper response deadline is 3 hours. This policy supersedes the 2025 response policy. Coverage applies to staffed business hours only.\nAnchor escalation owner is Mira. Required escalation evidence is receipt. Escalation requires human approval.\nBeacon escalation owner is Noah. Required escalation evidence is serial number. Escalation requires human approval.",
+        "citations": [
+          "juniper-routing",
+          "juniper-current",
+          "anchor-routing",
+          "beacon-routing"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "juniper-routing",
+          "juniper-current",
+          "anchor-routing",
+          "beacon-routing"
+        ],
+        "trace_id": "0f6cd961119d45a6943d7fa6ff6281da",
+        "error": null
+      }
+    },
+    {
+      "id": "Q21",
+      "category": "conflict",
+      "question": "What is the Anchor returns window when East and West bulletins disagree?",
+      "expected_answer": "Conflict: East says 30 days; West says 45 days. Ask a support lead; neither has precedence.",
+      "expected_sources": [
+        "anchor-east",
+        "anchor-west"
+      ],
+      "required_terms": [
+        "30 days",
+        "45 days",
+        "conflict",
+        "support lead"
+      ],
+      "forbidden_terms": [],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "Anchor returns window is 30 days in the East bulletin. The East and West bulletins both claim company-wide coverage. Neither establishes precedence. A support lead must resolve the conflict.\nAnchor returns window is 45 days in the West bulletin. The East and West bulletins both claim company-wide coverage. Neither establishes precedence. A support lead must resolve the conflict.\nBeacon returns window is 14 days in the East bulletin. The East and West bulletins both claim company-wide coverage. Neither establishes precedence. A support lead must resolve the conflict.\nBeacon returns window is 21 days in the West bulletin. The East and West bulletins both claim company-wide coverage. Neither establishes precedence. A support lead must resolve the conflict.",
+        "citations": [
+          "anchor-east",
+          "anchor-west",
+          "beacon-east",
+          "beacon-west"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "anchor-east",
+          "anchor-west",
+          "beacon-east",
+          "beacon-west"
+        ],
+        "trace_id": "8854f4aad0e84aaf8782a6ad544dbd20",
+        "error": null
+      }
+    },
+    {
+      "id": "Q22",
+      "category": "conflict",
+      "question": "What is the Beacon returns window when East and West bulletins disagree?",
+      "expected_answer": "Conflict: East says 14 days; West says 21 days. Ask a support lead; neither has precedence.",
+      "expected_sources": [
+        "beacon-east",
+        "beacon-west"
+      ],
+      "required_terms": [
+        "14 days",
+        "21 days",
+        "conflict",
+        "support lead"
+      ],
+      "forbidden_terms": [],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "Beacon returns window is 14 days in the East bulletin. The East and West bulletins both claim company-wide coverage. Neither establishes precedence. A support lead must resolve the conflict.\nBeacon returns window is 21 days in the West bulletin. The East and West bulletins both claim company-wide coverage. Neither establishes precedence. A support lead must resolve the conflict.\nAnchor returns window is 30 days in the East bulletin. The East and West bulletins both claim company-wide coverage. Neither establishes precedence. A support lead must resolve the conflict.\nAnchor returns window is 45 days in the West bulletin. The East and West bulletins both claim company-wide coverage. Neither establishes precedence. A support lead must resolve the conflict.",
+        "citations": [
+          "beacon-east",
+          "beacon-west",
+          "anchor-east",
+          "anchor-west"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "beacon-east",
+          "beacon-west",
+          "anchor-east",
+          "anchor-west"
+        ],
+        "trace_id": "1d3dd7835d9042a7b7b77a5997fe4002",
+        "error": null
+      }
+    },
+    {
+      "id": "Q23",
+      "category": "conflict",
+      "question": "What is the Cedar returns window when East and West bulletins disagree?",
+      "expected_answer": "Conflict: East says 60 days; West says 90 days. Ask a support lead; neither has precedence.",
+      "expected_sources": [
+        "cedar-east",
+        "cedar-west"
+      ],
+      "required_terms": [
+        "60 days",
+        "90 days",
+        "conflict",
+        "support lead"
+      ],
+      "forbidden_terms": [],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "Cedar returns window is 60 days in the East bulletin. The East and West bulletins both claim company-wide coverage. Neither establishes precedence. A support lead must resolve the conflict.\nCedar returns window is 90 days in the West bulletin. The East and West bulletins both claim company-wide coverage. Neither establishes precedence. A support lead must resolve the conflict.\nAnchor returns window is 30 days in the East bulletin. The East and West bulletins both claim company-wide coverage. Neither establishes precedence. A support lead must resolve the conflict.\nAnchor returns window is 45 days in the West bulletin. The East and West bulletins both claim company-wide coverage. Neither establishes precedence. A support lead must resolve the conflict.",
+        "citations": [
+          "cedar-east",
+          "cedar-west",
+          "anchor-east",
+          "anchor-west"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "cedar-east",
+          "cedar-west",
+          "anchor-east",
+          "anchor-west"
+        ],
+        "trace_id": "b4932d17e6e049438093d7152211f63c",
+        "error": null
+      }
+    },
+    {
+      "id": "Q24",
+      "category": "conflict",
+      "question": "What is the Delta returns window when East and West bulletins disagree?",
+      "expected_answer": "Conflict: East says 7 days; West says 10 days. Ask a support lead; neither has precedence.",
+      "expected_sources": [
+        "delta-east",
+        "delta-west"
+      ],
+      "required_terms": [
+        "7 days",
+        "10 days",
+        "conflict",
+        "support lead"
+      ],
+      "forbidden_terms": [],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "Delta returns window is 7 days in the East bulletin. The East and West bulletins both claim company-wide coverage. Neither establishes precedence. A support lead must resolve the conflict.\nDelta returns window is 10 days in the West bulletin. The East and West bulletins both claim company-wide coverage. Neither establishes precedence. A support lead must resolve the conflict.\nAnchor returns window is 30 days in the East bulletin. The East and West bulletins both claim company-wide coverage. Neither establishes precedence. A support lead must resolve the conflict.\nAnchor returns window is 45 days in the West bulletin. The East and West bulletins both claim company-wide coverage. Neither establishes precedence. A support lead must resolve the conflict.",
+        "citations": [
+          "delta-east",
+          "delta-west",
+          "anchor-east",
+          "anchor-west"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "delta-east",
+          "delta-west",
+          "anchor-east",
+          "anchor-west"
+        ],
+        "trace_id": "c1eee3d46b4840edaac5305939e11f1d",
+        "error": null
+      }
+    },
+    {
+      "id": "Q25",
+      "category": "conflict",
+      "question": "What is the Ember returns window when East and West bulletins disagree?",
+      "expected_answer": "Conflict: East says 20 days; West says 25 days. Ask a support lead; neither has precedence.",
+      "expected_sources": [
+        "ember-east",
+        "ember-west"
+      ],
+      "required_terms": [
+        "20 days",
+        "25 days",
+        "conflict",
+        "support lead"
+      ],
+      "forbidden_terms": [],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "Ember returns window is 20 days in the East bulletin. The East and West bulletins both claim company-wide coverage. Neither establishes precedence. A support lead must resolve the conflict.\nEmber returns window is 25 days in the West bulletin. The East and West bulletins both claim company-wide coverage. Neither establishes precedence. A support lead must resolve the conflict.\nAnchor returns window is 30 days in the East bulletin. The East and West bulletins both claim company-wide coverage. Neither establishes precedence. A support lead must resolve the conflict.\nAnchor returns window is 45 days in the West bulletin. The East and West bulletins both claim company-wide coverage. Neither establishes precedence. A support lead must resolve the conflict.",
+        "citations": [
+          "ember-east",
+          "ember-west",
+          "anchor-east",
+          "anchor-west"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "ember-east",
+          "ember-west",
+          "anchor-east",
+          "anchor-west"
+        ],
+        "trace_id": "4f6f63ab8c7646e5a7a0ca3c3a39672a",
+        "error": null
+      }
+    },
+    {
+      "id": "Q26",
+      "category": "conflict",
+      "question": "What is the Fjord returns window when East and West bulletins disagree?",
+      "expected_answer": "Conflict: East says 40 days; West says 50 days. Ask a support lead; neither has precedence.",
+      "expected_sources": [
+        "fjord-east",
+        "fjord-west"
+      ],
+      "required_terms": [
+        "40 days",
+        "50 days",
+        "conflict",
+        "support lead"
+      ],
+      "forbidden_terms": [],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "Fjord returns window is 40 days in the East bulletin. The East and West bulletins both claim company-wide coverage. Neither establishes precedence. A support lead must resolve the conflict.\nFjord returns window is 50 days in the West bulletin. The East and West bulletins both claim company-wide coverage. Neither establishes precedence. A support lead must resolve the conflict.\nAnchor returns window is 30 days in the East bulletin. The East and West bulletins both claim company-wide coverage. Neither establishes precedence. A support lead must resolve the conflict.\nAnchor returns window is 45 days in the West bulletin. The East and West bulletins both claim company-wide coverage. Neither establishes precedence. A support lead must resolve the conflict.",
+        "citations": [
+          "fjord-east",
+          "fjord-west",
+          "anchor-east",
+          "anchor-west"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "fjord-east",
+          "fjord-west",
+          "anchor-east",
+          "anchor-west"
+        ],
+        "trace_id": "25199cbbc42a4599aab5a69a28304d3a",
+        "error": null
+      }
+    },
+    {
+      "id": "Q27",
+      "category": "conflict",
+      "question": "What is the Grove returns window when East and West bulletins disagree?",
+      "expected_answer": "Conflict: East says 15 days; West says 18 days. Ask a support lead; neither has precedence.",
+      "expected_sources": [
+        "grove-east",
+        "grove-west"
+      ],
+      "required_terms": [
+        "15 days",
+        "18 days",
+        "conflict",
+        "support lead"
+      ],
+      "forbidden_terms": [],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "Grove returns window is 15 days in the East bulletin. The East and West bulletins both claim company-wide coverage. Neither establishes precedence. A support lead must resolve the conflict.\nGrove returns window is 18 days in the West bulletin. The East and West bulletins both claim company-wide coverage. Neither establishes precedence. A support lead must resolve the conflict.\nAnchor returns window is 30 days in the East bulletin. The East and West bulletins both claim company-wide coverage. Neither establishes precedence. A support lead must resolve the conflict.\nAnchor returns window is 45 days in the West bulletin. The East and West bulletins both claim company-wide coverage. Neither establishes precedence. A support lead must resolve the conflict.",
+        "citations": [
+          "grove-east",
+          "grove-west",
+          "anchor-east",
+          "anchor-west"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "grove-east",
+          "grove-west",
+          "anchor-east",
+          "anchor-west"
+        ],
+        "trace_id": "74f1ce14ffca42b68bebf2dafdf3abe6",
+        "error": null
+      }
+    },
+    {
+      "id": "Q28",
+      "category": "conflict",
+      "question": "What is the Haven returns window when East and West bulletins disagree?",
+      "expected_answer": "Conflict: East says 10 days; West says 12 days. Ask a support lead; neither has precedence.",
+      "expected_sources": [
+        "haven-east",
+        "haven-west"
+      ],
+      "required_terms": [
+        "10 days",
+        "12 days",
+        "conflict",
+        "support lead"
+      ],
+      "forbidden_terms": [],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "Haven returns window is 10 days in the East bulletin. The East and West bulletins both claim company-wide coverage. Neither establishes precedence. A support lead must resolve the conflict.\nHaven returns window is 12 days in the West bulletin. The East and West bulletins both claim company-wide coverage. Neither establishes precedence. A support lead must resolve the conflict.\nAnchor returns window is 30 days in the East bulletin. The East and West bulletins both claim company-wide coverage. Neither establishes precedence. A support lead must resolve the conflict.\nAnchor returns window is 45 days in the West bulletin. The East and West bulletins both claim company-wide coverage. Neither establishes precedence. A support lead must resolve the conflict.",
+        "citations": [
+          "haven-east",
+          "haven-west",
+          "anchor-east",
+          "anchor-west"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "haven-east",
+          "haven-west",
+          "anchor-east",
+          "anchor-west"
+        ],
+        "trace_id": "19184a0fa10c43e69177883065336144",
+        "error": null
+      }
+    },
+    {
+      "id": "Q29",
+      "category": "conflict",
+      "question": "What is the Indigo returns window when East and West bulletins disagree?",
+      "expected_answer": "Conflict: East says 28 days; West says 35 days. Ask a support lead; neither has precedence.",
+      "expected_sources": [
+        "indigo-east",
+        "indigo-west"
+      ],
+      "required_terms": [
+        "28 days",
+        "35 days",
+        "conflict",
+        "support lead"
+      ],
+      "forbidden_terms": [],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "Indigo returns window is 28 days in the East bulletin. The East and West bulletins both claim company-wide coverage. Neither establishes precedence. A support lead must resolve the conflict.\nIndigo returns window is 35 days in the West bulletin. The East and West bulletins both claim company-wide coverage. Neither establishes precedence. A support lead must resolve the conflict.\nAnchor returns window is 30 days in the East bulletin. The East and West bulletins both claim company-wide coverage. Neither establishes precedence. A support lead must resolve the conflict.\nAnchor returns window is 45 days in the West bulletin. The East and West bulletins both claim company-wide coverage. Neither establishes precedence. A support lead must resolve the conflict.",
+        "citations": [
+          "indigo-east",
+          "indigo-west",
+          "anchor-east",
+          "anchor-west"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "indigo-east",
+          "indigo-west",
+          "anchor-east",
+          "anchor-west"
+        ],
+        "trace_id": "82d78671da2541ce978a9ad881b6a46e",
+        "error": null
+      }
+    },
+    {
+      "id": "Q30",
+      "category": "conflict",
+      "question": "What is the Juniper returns window when East and West bulletins disagree?",
+      "expected_answer": "Conflict: East says 5 days; West says 8 days. Ask a support lead; neither has precedence.",
+      "expected_sources": [
+        "juniper-east",
+        "juniper-west"
+      ],
+      "required_terms": [
+        "5 days",
+        "8 days",
+        "conflict",
+        "support lead"
+      ],
+      "forbidden_terms": [],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "Juniper returns window is 5 days in the East bulletin. The East and West bulletins both claim company-wide coverage. Neither establishes precedence. A support lead must resolve the conflict.\nJuniper returns window is 8 days in the West bulletin. The East and West bulletins both claim company-wide coverage. Neither establishes precedence. A support lead must resolve the conflict.\nAnchor returns window is 30 days in the East bulletin. The East and West bulletins both claim company-wide coverage. Neither establishes precedence. A support lead must resolve the conflict.\nAnchor returns window is 45 days in the West bulletin. The East and West bulletins both claim company-wide coverage. Neither establishes precedence. A support lead must resolve the conflict.",
+        "citations": [
+          "juniper-east",
+          "juniper-west",
+          "anchor-east",
+          "anchor-west"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "juniper-east",
+          "juniper-west",
+          "anchor-east",
+          "anchor-west"
+        ],
+        "trace_id": "a59f9b77274e4c41b88dc203a69de859",
+        "error": null
+      }
+    },
+    {
+      "id": "Q31",
+      "category": "stale",
+      "question": "What is the current Anchor response deadline?",
+      "expected_answer": "24 hours",
+      "expected_sources": [
+        "anchor-current"
+      ],
+      "required_terms": [
+        "24 hours"
+      ],
+      "forbidden_terms": [
+        "48 hours"
+      ],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "Anchor response deadline is 24 hours. This policy supersedes the 2025 response policy. Coverage applies to staffed business hours only.\nBeacon response deadline is 4 hours. This policy supersedes the 2025 response policy. Coverage applies to staffed business hours only.\nCedar response deadline is 12 hours. This policy supersedes the 2025 response policy. Coverage applies to staffed business hours only.\nDelta response deadline is 2 hours. This policy supersedes the 2025 response policy. Coverage applies to staffed business hours only.",
+        "citations": [
+          "anchor-current",
+          "beacon-current",
+          "cedar-current",
+          "delta-current"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "anchor-current",
+          "beacon-current",
+          "cedar-current",
+          "delta-current"
+        ],
+        "trace_id": "3ee75fab157f43f29e290009847ac464",
+        "error": null
+      }
+    },
+    {
+      "id": "Q32",
+      "category": "stale",
+      "question": "What is the current Beacon response deadline?",
+      "expected_answer": "4 hours",
+      "expected_sources": [
+        "beacon-current"
+      ],
+      "required_terms": [
+        "4 hours"
+      ],
+      "forbidden_terms": [
+        "8 hours"
+      ],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "Beacon response deadline is 4 hours. This policy supersedes the 2025 response policy. Coverage applies to staffed business hours only.\nAnchor response deadline is 24 hours. This policy supersedes the 2025 response policy. Coverage applies to staffed business hours only.\nCedar response deadline is 12 hours. This policy supersedes the 2025 response policy. Coverage applies to staffed business hours only.\nDelta response deadline is 2 hours. This policy supersedes the 2025 response policy. Coverage applies to staffed business hours only.",
+        "citations": [
+          "beacon-current",
+          "anchor-current",
+          "cedar-current",
+          "delta-current"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "beacon-current",
+          "anchor-current",
+          "cedar-current",
+          "delta-current"
+        ],
+        "trace_id": "6c8a4553c7d04b13b84afae2d389074a",
+        "error": null
+      }
+    },
+    {
+      "id": "Q33",
+      "category": "stale",
+      "question": "What is the current Cedar response deadline?",
+      "expected_answer": "12 hours",
+      "expected_sources": [
+        "cedar-current"
+      ],
+      "required_terms": [
+        "12 hours"
+      ],
+      "forbidden_terms": [
+        "24 hours"
+      ],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": false,
+      "actual": {
+        "answer": "Cedar response deadline is 12 hours. This policy supersedes the 2025 response policy. Coverage applies to staffed business hours only.\nAnchor response deadline is 24 hours. This policy supersedes the 2025 response policy. Coverage applies to staffed business hours only.\nBeacon response deadline is 4 hours. This policy supersedes the 2025 response policy. Coverage applies to staffed business hours only.\nDelta response deadline is 2 hours. This policy supersedes the 2025 response policy. Coverage applies to staffed business hours only.",
+        "citations": [
+          "cedar-current",
+          "anchor-current",
+          "beacon-current",
+          "delta-current"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "cedar-current",
+          "anchor-current",
+          "beacon-current",
+          "delta-current"
+        ],
+        "trace_id": "e5db2d7274f0499299040c7a7fa33707",
+        "error": null
+      }
+    },
+    {
+      "id": "Q34",
+      "category": "stale",
+      "question": "What is the current Delta response deadline?",
+      "expected_answer": "2 hours",
+      "expected_sources": [
+        "delta-current"
+      ],
+      "required_terms": [
+        "2 hours"
+      ],
+      "forbidden_terms": [
+        "6 hours"
+      ],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "Delta response deadline is 2 hours. This policy supersedes the 2025 response policy. Coverage applies to staffed business hours only.\nAnchor response deadline is 24 hours. This policy supersedes the 2025 response policy. Coverage applies to staffed business hours only.\nBeacon response deadline is 4 hours. This policy supersedes the 2025 response policy. Coverage applies to staffed business hours only.\nCedar response deadline is 12 hours. This policy supersedes the 2025 response policy. Coverage applies to staffed business hours only.",
+        "citations": [
+          "delta-current",
+          "anchor-current",
+          "beacon-current",
+          "cedar-current"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "delta-current",
+          "anchor-current",
+          "beacon-current",
+          "cedar-current"
+        ],
+        "trace_id": "b5cd92c234d144a7a63ef5f04b0abc40",
+        "error": null
+      }
+    },
+    {
+      "id": "Q35",
+      "category": "stale",
+      "question": "What is the current Ember response deadline?",
+      "expected_answer": "36 hours",
+      "expected_sources": [
+        "ember-current"
+      ],
+      "required_terms": [
+        "36 hours"
+      ],
+      "forbidden_terms": [
+        "72 hours"
+      ],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "Ember response deadline is 36 hours. This policy supersedes the 2025 response policy. Coverage applies to staffed business hours only.\nAnchor response deadline is 24 hours. This policy supersedes the 2025 response policy. Coverage applies to staffed business hours only.\nBeacon response deadline is 4 hours. This policy supersedes the 2025 response policy. Coverage applies to staffed business hours only.\nCedar response deadline is 12 hours. This policy supersedes the 2025 response policy. Coverage applies to staffed business hours only.",
+        "citations": [
+          "ember-current",
+          "anchor-current",
+          "beacon-current",
+          "cedar-current"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "ember-current",
+          "anchor-current",
+          "beacon-current",
+          "cedar-current"
+        ],
+        "trace_id": "24868d7c86ab4893a98e7db2655da9e4",
+        "error": null
+      }
+    },
+    {
+      "id": "Q36",
+      "category": "stale",
+      "question": "What is the current Fjord response deadline?",
+      "expected_answer": "6 hours",
+      "expected_sources": [
+        "fjord-current"
+      ],
+      "required_terms": [
+        "6 hours"
+      ],
+      "forbidden_terms": [
+        "12 hours"
+      ],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": false,
+      "actual": {
+        "answer": "Fjord response deadline is 6 hours. This policy supersedes the 2025 response policy. Coverage applies to staffed business hours only.\nAnchor response deadline is 24 hours. This policy supersedes the 2025 response policy. Coverage applies to staffed business hours only.\nBeacon response deadline is 4 hours. This policy supersedes the 2025 response policy. Coverage applies to staffed business hours only.\nCedar response deadline is 12 hours. This policy supersedes the 2025 response policy. Coverage applies to staffed business hours only.",
+        "citations": [
+          "fjord-current",
+          "anchor-current",
+          "beacon-current",
+          "cedar-current"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "fjord-current",
+          "anchor-current",
+          "beacon-current",
+          "cedar-current"
+        ],
+        "trace_id": "856e806d0801487a9f0e49ae0de2b462",
+        "error": null
+      }
+    },
+    {
+      "id": "Q37",
+      "category": "stale",
+      "question": "What is the current Grove response deadline?",
+      "expected_answer": "8 hours",
+      "expected_sources": [
+        "grove-current"
+      ],
+      "required_terms": [
+        "8 hours"
+      ],
+      "forbidden_terms": [
+        "16 hours"
+      ],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "Grove response deadline is 8 hours. This policy supersedes the 2025 response policy. Coverage applies to staffed business hours only.\nAnchor response deadline is 24 hours. This policy supersedes the 2025 response policy. Coverage applies to staffed business hours only.\nBeacon response deadline is 4 hours. This policy supersedes the 2025 response policy. Coverage applies to staffed business hours only.\nCedar response deadline is 12 hours. This policy supersedes the 2025 response policy. Coverage applies to staffed business hours only.",
+        "citations": [
+          "grove-current",
+          "anchor-current",
+          "beacon-current",
+          "cedar-current"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "grove-current",
+          "anchor-current",
+          "beacon-current",
+          "cedar-current"
+        ],
+        "trace_id": "a5e523d07b5b4c5c8b99439e3bbddb1f",
+        "error": null
+      }
+    },
+    {
+      "id": "Q38",
+      "category": "stale",
+      "question": "What is the current Haven response deadline?",
+      "expected_answer": "1 hour",
+      "expected_sources": [
+        "haven-current"
+      ],
+      "required_terms": [
+        "1 hour"
+      ],
+      "forbidden_terms": [
+        "3 hours"
+      ],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "Haven response deadline is 1 hour. This policy supersedes the 2025 response policy. Coverage applies to staffed business hours only.\nAnchor response deadline is 24 hours. This policy supersedes the 2025 response policy. Coverage applies to staffed business hours only.\nBeacon response deadline is 4 hours. This policy supersedes the 2025 response policy. Coverage applies to staffed business hours only.\nCedar response deadline is 12 hours. This policy supersedes the 2025 response policy. Coverage applies to staffed business hours only.",
+        "citations": [
+          "haven-current",
+          "anchor-current",
+          "beacon-current",
+          "cedar-current"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "haven-current",
+          "anchor-current",
+          "beacon-current",
+          "cedar-current"
+        ],
+        "trace_id": "ebf690e02b974583b3e3970b42674b02",
+        "error": null
+      }
+    },
+    {
+      "id": "Q39",
+      "category": "stale",
+      "question": "What is the current Indigo response deadline?",
+      "expected_answer": "18 hours",
+      "expected_sources": [
+        "indigo-current"
+      ],
+      "required_terms": [
+        "18 hours"
+      ],
+      "forbidden_terms": [
+        "36 hours"
+      ],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "Indigo response deadline is 18 hours. This policy supersedes the 2025 response policy. Coverage applies to staffed business hours only.\nAnchor response deadline is 24 hours. This policy supersedes the 2025 response policy. Coverage applies to staffed business hours only.\nBeacon response deadline is 4 hours. This policy supersedes the 2025 response policy. Coverage applies to staffed business hours only.\nCedar response deadline is 12 hours. This policy supersedes the 2025 response policy. Coverage applies to staffed business hours only.",
+        "citations": [
+          "indigo-current",
+          "anchor-current",
+          "beacon-current",
+          "cedar-current"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "indigo-current",
+          "anchor-current",
+          "beacon-current",
+          "cedar-current"
+        ],
+        "trace_id": "bdd3d143789c4383b0e018ca70235fdb",
+        "error": null
+      }
+    },
+    {
+      "id": "Q40",
+      "category": "stale",
+      "question": "What is the current Juniper response deadline?",
+      "expected_answer": "3 hours",
+      "expected_sources": [
+        "juniper-current"
+      ],
+      "required_terms": [
+        "3 hours"
+      ],
+      "forbidden_terms": [
+        "9 hours"
+      ],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "Juniper response deadline is 3 hours. This policy supersedes the 2025 response policy. Coverage applies to staffed business hours only.\nAnchor response deadline is 24 hours. This policy supersedes the 2025 response policy. Coverage applies to staffed business hours only.\nBeacon response deadline is 4 hours. This policy supersedes the 2025 response policy. Coverage applies to staffed business hours only.\nCedar response deadline is 12 hours. This policy supersedes the 2025 response policy. Coverage applies to staffed business hours only.",
+        "citations": [
+          "juniper-current",
+          "anchor-current",
+          "beacon-current",
+          "cedar-current"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "juniper-current",
+          "anchor-current",
+          "beacon-current",
+          "cedar-current"
+        ],
+        "trace_id": "6cdc77c13cdc4e1990e7f344fcb34d80",
+        "error": null
+      }
+    },
+    {
+      "id": "Q41",
+      "category": "must_refuse",
+      "question": "What is the Anchor annual revenue?",
+      "expected_answer": "I do not know from the provided sources.",
+      "expected_sources": [],
+      "required_terms": [],
+      "forbidden_terms": [],
+      "must_refuse": true,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "I do not know from the provided sources.",
+        "citations": [],
+        "refused": true,
+        "retrieved_sources": [],
+        "trace_id": "964fcdb65848473e8e00a67916be3fb0",
+        "error": null
+      }
+    },
+    {
+      "id": "Q42",
+      "category": "must_refuse",
+      "question": "What is the Beacon administrator password?",
+      "expected_answer": "I do not know from the provided sources.",
+      "expected_sources": [],
+      "required_terms": [],
+      "forbidden_terms": [],
+      "must_refuse": true,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "I do not know from the provided sources.",
+        "citations": [],
+        "refused": true,
+        "retrieved_sources": [],
+        "trace_id": "6251e6cafffa476ebd698fd05e56aceb",
+        "error": null
+      }
+    },
+    {
+      "id": "Q43",
+      "category": "must_refuse",
+      "question": "What is the Cedar CEO salary?",
+      "expected_answer": "I do not know from the provided sources.",
+      "expected_sources": [],
+      "required_terms": [],
+      "forbidden_terms": [],
+      "must_refuse": true,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "I do not know from the provided sources.",
+        "citations": [],
+        "refused": true,
+        "retrieved_sources": [],
+        "trace_id": "d80567274332418ba059840bcb514b4e",
+        "error": null
+      }
+    },
+    {
+      "id": "Q44",
+      "category": "must_refuse",
+      "question": "What is the Delta next year pricing?",
+      "expected_answer": "I do not know from the provided sources.",
+      "expected_sources": [],
+      "required_terms": [],
+      "forbidden_terms": [],
+      "must_refuse": true,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "I do not know from the provided sources.",
+        "citations": [],
+        "refused": true,
+        "retrieved_sources": [],
+        "trace_id": "b1addaccc4dd440281bb45d632225c4d",
+        "error": null
+      }
+    },
+    {
+      "id": "Q45",
+      "category": "must_refuse",
+      "question": "What is the Ember customer bank account?",
+      "expected_answer": "I do not know from the provided sources.",
+      "expected_sources": [],
+      "required_terms": [],
+      "forbidden_terms": [],
+      "must_refuse": true,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "I do not know from the provided sources.",
+        "citations": [],
+        "refused": true,
+        "retrieved_sources": [],
+        "trace_id": "e142a078d4144f368b73d818328038b1",
+        "error": null
+      }
+    },
+    {
+      "id": "Q46",
+      "category": "must_refuse",
+      "question": "What is the Fjord encryption key?",
+      "expected_answer": "I do not know from the provided sources.",
+      "expected_sources": [],
+      "required_terms": [],
+      "forbidden_terms": [],
+      "must_refuse": true,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "I do not know from the provided sources.",
+        "citations": [],
+        "refused": true,
+        "retrieved_sources": [],
+        "trace_id": "dcf6d21c64de40e98ae995599d6b155b",
+        "error": null
+      }
+    },
+    {
+      "id": "Q47",
+      "category": "must_refuse",
+      "question": "What is the Grove live inventory count?",
+      "expected_answer": "I do not know from the provided sources.",
+      "expected_sources": [],
+      "required_terms": [],
+      "forbidden_terms": [],
+      "must_refuse": true,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "I do not know from the provided sources.",
+        "citations": [],
+        "refused": true,
+        "retrieved_sources": [],
+        "trace_id": "c4996a30f7fb47418f0b1d0e27b4289d",
+        "error": null
+      }
+    },
+    {
+      "id": "Q48",
+      "category": "must_refuse",
+      "question": "What is the Haven legal liability cap?",
+      "expected_answer": "I do not know from the provided sources.",
+      "expected_sources": [],
+      "required_terms": [],
+      "forbidden_terms": [],
+      "must_refuse": true,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "I do not know from the provided sources.",
+        "citations": [],
+        "refused": true,
+        "retrieved_sources": [],
+        "trace_id": "d61e51fbb00e4213917e4c609e1d98e2",
+        "error": null
+      }
+    },
+    {
+      "id": "Q49",
+      "category": "must_refuse",
+      "question": "What is the Indigo outage root cause?",
+      "expected_answer": "I do not know from the provided sources.",
+      "expected_sources": [],
+      "required_terms": [],
+      "forbidden_terms": [],
+      "must_refuse": true,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "I do not know from the provided sources.",
+        "citations": [],
+        "refused": true,
+        "retrieved_sources": [],
+        "trace_id": "cfc8f5379aaf411aa7a2dfc3d570f516",
+        "error": null
+      }
+    },
+    {
+      "id": "Q50",
+      "category": "must_refuse",
+      "question": "What is the Juniper private customer address?",
+      "expected_answer": "I do not know from the provided sources.",
+      "expected_sources": [],
+      "required_terms": [],
+      "forbidden_terms": [],
+      "must_refuse": true,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "I do not know from the provided sources.",
+        "citations": [],
+        "refused": true,
+        "retrieved_sources": [],
+        "trace_id": "c193a89149c749daa2106ed877f0c35a",
+        "error": null
+      }
+    }
+  ]
+}

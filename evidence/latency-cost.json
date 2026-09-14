@@ -1,0 +1,35 @@
+{
+  "trace_source": "evidence\\final-improved\\langfuse-export.jsonl",
+  "price_source": "Groq Qwen3.6-27B rates; https://console.groq.com/docs/models; read 2026-09-14. Different model/tokenizer: illustrative price scenario only, not a Qwen2.5 bill.",
+  "percentile": "nearest rank",
+  "rows": [
+    {
+      "backend": "ollama",
+      "node": "retrieval",
+      "n": 50,
+      "p50_ms": 2.000093460083008,
+      "p95_ms": 3.999948501586914,
+      "guessed_p50_ms": 5,
+      "guessed_p95_ms": 20,
+      "p50_gap_ms": -2.999906539916992,
+      "p95_gap_ms": -16.000051498413086,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "modeled_usd": 0.0
+    },
+    {
+      "backend": "ollama",
+      "node": "generation",
+      "n": 50,
+      "p50_ms": 743.9999580383301,
+      "p95_ms": 1976.9999980926514,
+      "guessed_p50_ms": 3000,
+      "guessed_p95_ms": 10000,
+      "p50_gap_ms": -2256.00004196167,
+      "p95_gap_ms": -8023.000001907349,
+      "input_tokens": 15363,
+      "output_tokens": 2816,
+      "modeled_usd": 0.0176658
+    }
+  ]
+}

@@ -1,0 +1,1693 @@
+{
+  "summary": {
+    "recorded_at": "2026-09-13T21:56:06.641099+00:00",
+    "python": "3.12.14",
+    "backend": "ollama",
+    "mode": "improved",
+    "n": 50,
+    "golden_sha256": "48c373efb3f18a8e9c417fc877b1fdd07fc51bd09a10c62b52129a3b188f13a3",
+    "corpus_sha256": "96a7eae730ec65601aadf1b63836a5f848a48ec5f03844b926d36faaf7b92410",
+    "retrieval_passes": 50,
+    "generation_passes": 38,
+    "errors": 10,
+    "categories": {
+      "easy": 10,
+      "synthesis": 10,
+      "conflict": 10,
+      "stale": 10,
+      "must_refuse": 10
+    },
+    "warning": "Rule-based grading requires human calibration."
+  },
+  "rows": [
+    {
+      "id": "Q01",
+      "category": "easy",
+      "question": "Who is the Anchor escalation owner?",
+      "expected_answer": "Mira",
+      "expected_sources": [
+        "anchor-routing"
+      ],
+      "required_terms": [
+        "Mira"
+      ],
+      "forbidden_terms": [],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": false,
+      "actual": {
+        "answer": "",
+        "citations": [],
+        "refused": false,
+        "raw_model_output": "{\"answer\": \"Mira is the Anchor escalation owner.\", \"citations\": [\"{\"],\"refused\": false}",
+        "retrieved_sources": [
+          "anchor-routing",
+          "beacon-routing",
+          "cedar-routing",
+          "delta-routing"
+        ],
+        "trace_id": "56aa34e7bfa8444588ce52de382d0eaa",
+        "error": "ModelOutputError: Unsupported or missing source citations"
+      }
+    },
+    {
+      "id": "Q02",
+      "category": "easy",
+      "question": "Who is the Beacon escalation owner?",
+      "expected_answer": "Noah",
+      "expected_sources": [
+        "beacon-routing"
+      ],
+      "required_terms": [
+        "Noah"
+      ],
+      "forbidden_terms": [],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "Noah is the Beacon escalation owner.",
+        "citations": [
+          "beacon-routing",
+          "anchor-routing",
+          "cedar-routing",
+          "delta-routing"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "beacon-routing",
+          "anchor-routing",
+          "cedar-routing",
+          "delta-routing"
+        ],
+        "trace_id": "16654ca01dda48888630097ae6153de0",
+        "error": null
+      }
+    },
+    {
+      "id": "Q03",
+      "category": "easy",
+      "question": "Who is the Cedar escalation owner?",
+      "expected_answer": "Iris",
+      "expected_sources": [
+        "cedar-routing"
+      ],
+      "required_terms": [
+        "Iris"
+      ],
+      "forbidden_terms": [],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": false,
+      "actual": {
+        "answer": "",
+        "citations": [],
+        "refused": false,
+        "raw_model_output": "{\"answer\": \"Cedar escalation owner is Iris. Cedar escalation procedure requires human approval.\", \"citations\": [\"{\"],\"refused\": false}",
+        "retrieved_sources": [
+          "cedar-routing",
+          "anchor-routing",
+          "beacon-routing",
+          "delta-routing"
+        ],
+        "trace_id": "6a4d5e2c06054dc38a2872b045535e5a",
+        "error": "ModelOutputError: Unsupported or missing source citations"
+      }
+    },
+    {
+      "id": "Q04",
+      "category": "easy",
+      "question": "Who is the Delta escalation owner?",
+      "expected_answer": "Omar",
+      "expected_sources": [
+        "delta-routing"
+      ],
+      "required_terms": [
+        "Omar"
+      ],
+      "forbidden_terms": [],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "Omar is the Delta escalation owner.",
+        "citations": [
+          "delta-routing",
+          "anchor-routing",
+          "beacon-routing",
+          "cedar-routing"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "delta-routing",
+          "anchor-routing",
+          "beacon-routing",
+          "cedar-routing"
+        ],
+        "trace_id": "50067d4fdd1e460299d3db1d9abdcd82",
+        "error": null
+      }
+    },
+    {
+      "id": "Q05",
+      "category": "easy",
+      "question": "Who is the Ember escalation owner?",
+      "expected_answer": "Lina",
+      "expected_sources": [
+        "ember-routing"
+      ],
+      "required_terms": [
+        "Lina"
+      ],
+      "forbidden_terms": [],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": false,
+      "actual": {
+        "answer": "",
+        "citations": [],
+        "refused": false,
+        "raw_model_output": "{\"answer\": \"Lina is the Ember escalation owner.\", \"citations\": [\"{\"],\"refused\":true}",
+        "retrieved_sources": [
+          "ember-routing",
+          "anchor-routing",
+          "beacon-routing",
+          "cedar-routing"
+        ],
+        "trace_id": "db82fa418305467ca53874091db147e2",
+        "error": "ModelOutputError: Unsupported or missing source citations"
+      }
+    },
+    {
+      "id": "Q06",
+      "category": "easy",
+      "question": "Who is the Fjord escalation owner?",
+      "expected_answer": "Theo",
+      "expected_sources": [
+        "fjord-routing"
+      ],
+      "required_terms": [
+        "Theo"
+      ],
+      "forbidden_terms": [],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "Theo is the Fjord escalation owner.",
+        "citations": [
+          "fjord-routing",
+          "anchor-routing",
+          "beacon-routing",
+          "cedar-routing"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "fjord-routing",
+          "anchor-routing",
+          "beacon-routing",
+          "cedar-routing"
+        ],
+        "trace_id": "c25acba84b0d4020bcda01490a5d4dc9",
+        "error": null
+      }
+    },
+    {
+      "id": "Q07",
+      "category": "easy",
+      "question": "Who is the Grove escalation owner?",
+      "expected_answer": "Ada",
+      "expected_sources": [
+        "grove-routing"
+      ],
+      "required_terms": [
+        "Ada"
+      ],
+      "forbidden_terms": [],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": false,
+      "actual": {
+        "answer": "",
+        "citations": [],
+        "refused": false,
+        "raw_model_output": "{\"answer\": \"Ada is the Grove escalation owner.\", \"citations\": [\"{\" ],\"refused\":true}",
+        "retrieved_sources": [
+          "grove-routing",
+          "anchor-routing",
+          "beacon-routing",
+          "cedar-routing"
+        ],
+        "trace_id": "a8089db8cee541288fed826b863b8096",
+        "error": "ModelOutputError: Unsupported or missing source citations"
+      }
+    },
+    {
+      "id": "Q08",
+      "category": "easy",
+      "question": "Who is the Haven escalation owner?",
+      "expected_answer": "Zara",
+      "expected_sources": [
+        "haven-routing"
+      ],
+      "required_terms": [
+        "Zara"
+      ],
+      "forbidden_terms": [],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "Zara is the Haven escalation owner.",
+        "citations": [
+          "haven-routing",
+          "anchor-routing",
+          "beacon-routing",
+          "cedar-routing"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "haven-routing",
+          "anchor-routing",
+          "beacon-routing",
+          "cedar-routing"
+        ],
+        "trace_id": "04bfec8774f24ed89597d92361767f03",
+        "error": null
+      }
+    },
+    {
+      "id": "Q09",
+      "category": "easy",
+      "question": "Who is the Indigo escalation owner?",
+      "expected_answer": "Eli",
+      "expected_sources": [
+        "indigo-routing"
+      ],
+      "required_terms": [
+        "Eli"
+      ],
+      "forbidden_terms": [],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "Eli is the Indigo escalation owner.",
+        "citations": [
+          "indigo-routing",
+          "anchor-routing",
+          "beacon-routing",
+          "cedar-routing"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "indigo-routing",
+          "anchor-routing",
+          "beacon-routing",
+          "cedar-routing"
+        ],
+        "trace_id": "8945db09247e4fadadbd0e19d39bd261",
+        "error": null
+      }
+    },
+    {
+      "id": "Q10",
+      "category": "easy",
+      "question": "Who is the Juniper escalation owner?",
+      "expected_answer": "Ravi",
+      "expected_sources": [
+        "juniper-routing"
+      ],
+      "required_terms": [
+        "Ravi"
+      ],
+      "forbidden_terms": [],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": false,
+      "actual": {
+        "answer": "",
+        "citations": [],
+        "refused": false,
+        "raw_model_output": "{\"answer\": \"Ravi is the Juniper escalation owner.\", \"citations\": [\"{\" ],\"refused\":false}",
+        "retrieved_sources": [
+          "juniper-routing",
+          "anchor-routing",
+          "beacon-routing",
+          "cedar-routing"
+        ],
+        "trace_id": "a94fb604117c4f6cb8331172bc605338",
+        "error": "ModelOutputError: Unsupported or missing source citations"
+      }
+    },
+    {
+      "id": "Q11",
+      "category": "synthesis",
+      "question": "What is the current Anchor response deadline and required escalation evidence?",
+      "expected_answer": "24 hours; receipt",
+      "expected_sources": [
+        "anchor-current",
+        "anchor-routing"
+      ],
+      "required_terms": [
+        "24 hours",
+        "receipt"
+      ],
+      "forbidden_terms": [
+        "48 hours"
+      ],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": false,
+      "actual": {
+        "answer": "The current Anchor response deadline is 24 hours, and the required escalation evidence is receipt. The Anchor current response policy states that the deadline is 24 hours, and the coverage applies to staffed business hours only.",
+        "citations": [
+          "anchor-routing",
+          "beacon-routing",
+          "cedar-routing"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "anchor-routing",
+          "anchor-current",
+          "beacon-routing",
+          "cedar-routing"
+        ],
+        "trace_id": "1f7a52f51f7f4098bc55ccf05227de9e",
+        "error": null
+      }
+    },
+    {
+      "id": "Q12",
+      "category": "synthesis",
+      "question": "What is the current Beacon response deadline and required escalation evidence?",
+      "expected_answer": "4 hours; serial number",
+      "expected_sources": [
+        "beacon-current",
+        "beacon-routing"
+      ],
+      "required_terms": [
+        "4 hours",
+        "serial number"
+      ],
+      "forbidden_terms": [
+        "8 hours"
+      ],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "The current Beacon response deadline is 4 hours, and the required escalation evidence is serial number. The Beacon current response policy states that the response deadline is 4 hours, and the coverage applies to staffed business hours only.",
+        "citations": [
+          "beacon-routing",
+          "beacon-current",
+          "anchor-routing",
+          "cedar-routing"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "beacon-routing",
+          "beacon-current",
+          "anchor-routing",
+          "cedar-routing"
+        ],
+        "trace_id": "ff9c6dec20d0413e9c9d9f8b4ec4ccc6",
+        "error": null
+      }
+    },
+    {
+      "id": "Q13",
+      "category": "synthesis",
+      "question": "What is the current Cedar response deadline and required escalation evidence?",
+      "expected_answer": "12 hours; purchase order",
+      "expected_sources": [
+        "cedar-current",
+        "cedar-routing"
+      ],
+      "required_terms": [
+        "12 hours",
+        "purchase order"
+      ],
+      "forbidden_terms": [
+        "24 hours"
+      ],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": false,
+      "actual": {
+        "answer": "",
+        "citations": [],
+        "refused": false,
+        "raw_model_output": "{\"answer\": \"The current Cedar response deadline is 12 hours, and the Cedar current response policy requires that the Cedar response deadline is 12 hours. The Cedar response deadline is 12 hours, and the Cedar current response policy requires that the Cedar response deadline is 12 hours. The Cedar response deadline is 12 hours, and the Cedar current response policy requires that the Cedar response deadline is 12 hours. The Cedar response deadline is 12 hours, and the Cedar current response policy requires that the Cedar response deadline is 12 hours. The Cedar response deadline is 12 hours, and the Cedar current response policy requires that the Cedar response deadline is 12 hours. The Cedar response deadline is 12 hours, and the Cedar current response policy requires that the Cedar response deadline is 12 hours. The Cedar response deadline is 12 hours, and the Cedar current response policy requires that the Cedar response deadline is 12 hours. The Cedar response deadline is 12 hours, and the Cedar current response policy requires that the Cedar response deadline is 12 hours. The Cedar response deadline is 12 hours, and the Cedar current response policy requires that the Cedar response deadline is 12 hours",
+        "retrieved_sources": [
+          "cedar-routing",
+          "cedar-current",
+          "anchor-routing",
+          "beacon-routing"
+        ],
+        "trace_id": "49b3d9bb029a4e3d9f52d6ecb3d33257",
+        "error": "ModelOutputError: JSONDecodeError: Unterminated string starting at: line 1 column 12 (char 11)"
+      }
+    },
+    {
+      "id": "Q14",
+      "category": "synthesis",
+      "question": "What is the current Delta response deadline and required escalation evidence?",
+      "expected_answer": "2 hours; device photograph",
+      "expected_sources": [
+        "delta-current",
+        "delta-routing"
+      ],
+      "required_terms": [
+        "2 hours",
+        "device photograph"
+      ],
+      "forbidden_terms": [
+        "6 hours"
+      ],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "The current Delta response deadline is 2 hours, and the required escalation evidence is device photograph. The Delta response deadline is 2 hours, and the required escalation evidence is device photograph. The Delta response deadline is 2 hours, and the required escalation evidence is device photograph.",
+        "citations": [
+          "delta-routing",
+          "delta-current",
+          "anchor-routing",
+          "beacon-routing"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "delta-routing",
+          "delta-current",
+          "anchor-routing",
+          "beacon-routing"
+        ],
+        "trace_id": "9f87613dce68497cb30805618e36f328",
+        "error": null
+      }
+    },
+    {
+      "id": "Q15",
+      "category": "synthesis",
+      "question": "What is the current Ember response deadline and required escalation evidence?",
+      "expected_answer": "36 hours; warranty card",
+      "expected_sources": [
+        "ember-current",
+        "ember-routing"
+      ],
+      "required_terms": [
+        "36 hours",
+        "warranty card"
+      ],
+      "forbidden_terms": [
+        "72 hours"
+      ],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": false,
+      "actual": {
+        "answer": "",
+        "citations": [],
+        "refused": false,
+        "raw_model_output": "{\"answer\": \"Ember response deadline is 36 hours.\", \"citations\": [\"{\" ],\"refused\":false}",
+        "retrieved_sources": [
+          "ember-routing",
+          "ember-current",
+          "anchor-routing",
+          "beacon-routing"
+        ],
+        "trace_id": "030b496410954da5b3bd7d9351d5b5de",
+        "error": "ModelOutputError: Unsupported or missing source citations"
+      }
+    },
+    {
+      "id": "Q16",
+      "category": "synthesis",
+      "question": "What is the current Fjord response deadline and required escalation evidence?",
+      "expected_answer": "6 hours; error log",
+      "expected_sources": [
+        "fjord-current",
+        "fjord-routing"
+      ],
+      "required_terms": [
+        "6 hours",
+        "error log"
+      ],
+      "forbidden_terms": [
+        "12 hours"
+      ],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": false,
+      "actual": {
+        "answer": "",
+        "citations": [],
+        "refused": false,
+        "raw_model_output": "{\"answer\": \"The current Fjord response deadline is 6 hours.\", \"citations\": [\"excerpts[0]\"], \"refused\": false}",
+        "retrieved_sources": [
+          "fjord-routing",
+          "fjord-current",
+          "anchor-routing",
+          "beacon-routing"
+        ],
+        "trace_id": "9cca28468b1e4150a159abf105184bc8",
+        "error": "ModelOutputError: Unsupported or missing source citations"
+      }
+    },
+    {
+      "id": "Q17",
+      "category": "synthesis",
+      "question": "What is the current Grove response deadline and required escalation evidence?",
+      "expected_answer": "8 hours; delivery note",
+      "expected_sources": [
+        "grove-current",
+        "grove-routing"
+      ],
+      "required_terms": [
+        "8 hours",
+        "delivery note"
+      ],
+      "forbidden_terms": [
+        "16 hours"
+      ],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "The current Grove response deadline is 8 hours, and the required escalation evidence is delivery note. The current Grove current response policy is that the deadline is 8 hours, and the coverage applies to staffed business hours only. The current Grove response policy is that the deadline is 8 hours, and the coverage applies to staffed business hours only.",
+        "citations": [
+          "grove-routing",
+          "grove-current",
+          "anchor-routing",
+          "beacon-routing"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "grove-routing",
+          "grove-current",
+          "anchor-routing",
+          "beacon-routing"
+        ],
+        "trace_id": "5164408306ca4983980f4280a394d4b7",
+        "error": null
+      }
+    },
+    {
+      "id": "Q18",
+      "category": "synthesis",
+      "question": "What is the current Haven response deadline and required escalation evidence?",
+      "expected_answer": "1 hour; case number",
+      "expected_sources": [
+        "haven-current",
+        "haven-routing"
+      ],
+      "required_terms": [
+        "1 hour",
+        "case number"
+      ],
+      "forbidden_terms": [
+        "3 hours"
+      ],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": false,
+      "actual": {
+        "answer": "",
+        "citations": [],
+        "refused": false,
+        "raw_model_output": "{\"answer\": \"The current Haven response deadline is 1 hour, and the required escalation evidence is case number. The Haven response deadline is 1 hour, and the required escalation evidence is case number. The Haven response deadline is 1 hour, and the required escalation evidence is case number.\", \"citations\": [\"{\"],\"refused\": false}",
+        "retrieved_sources": [
+          "haven-routing",
+          "haven-current",
+          "anchor-routing",
+          "beacon-routing"
+        ],
+        "trace_id": "f90c7a98630f430385a688c686a56f13",
+        "error": "ModelOutputError: Unsupported or missing source citations"
+      }
+    },
+    {
+      "id": "Q19",
+      "category": "synthesis",
+      "question": "What is the current Indigo response deadline and required escalation evidence?",
+      "expected_answer": "18 hours; activation date",
+      "expected_sources": [
+        "indigo-current",
+        "indigo-routing"
+      ],
+      "required_terms": [
+        "18 hours",
+        "activation date"
+      ],
+      "forbidden_terms": [
+        "36 hours"
+      ],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "The current Indigo response deadline is 18 hours, and the required escalation evidence is activation date. The Indigo current response policy supersedes the 2025 response policy, and coverage applies to staffed business hours only.",
+        "citations": [
+          "indigo-routing",
+          "indigo-current",
+          "anchor-routing",
+          "beacon-routing"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "indigo-routing",
+          "indigo-current",
+          "anchor-routing",
+          "beacon-routing"
+        ],
+        "trace_id": "db746992118a4a0ea4f5e16597b6be96",
+        "error": null
+      }
+    },
+    {
+      "id": "Q20",
+      "category": "synthesis",
+      "question": "What is the current Juniper response deadline and required escalation evidence?",
+      "expected_answer": "3 hours; service report",
+      "expected_sources": [
+        "juniper-current",
+        "juniper-routing"
+      ],
+      "required_terms": [
+        "3 hours",
+        "service report"
+      ],
+      "forbidden_terms": [
+        "9 hours"
+      ],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "The current Juniper response deadline is 3 hours, and the required escalation evidence is service report. The Juniper response policy specifies that the current response deadline is 3 hours, and the coverage applies to staffed business hours only. The Juniper current response policy also specifies that the Juniper response deadline is 3 hours, and the coverage applies to staffed business hours only.",
+        "citations": [
+          "juniper-routing",
+          "juniper-current",
+          "anchor-routing",
+          "beacon-routing"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "juniper-routing",
+          "juniper-current",
+          "anchor-routing",
+          "beacon-routing"
+        ],
+        "trace_id": "c11944170631418e995cbea2612276d7",
+        "error": null
+      }
+    },
+    {
+      "id": "Q21",
+      "category": "conflict",
+      "question": "What is the Anchor returns window when East and West bulletins disagree?",
+      "expected_answer": "Conflict: East says 30 days; West says 45 days. Ask a support lead; neither has precedence.",
+      "expected_sources": [
+        "anchor-east",
+        "anchor-west"
+      ],
+      "required_terms": [
+        "30 days",
+        "45 days",
+        "conflict",
+        "support lead"
+      ],
+      "forbidden_terms": [],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "The Anchor returns window is 30 days in the East bulletin and 45 days in the West bulletin. The East and West bulletins both claim company-wide coverage, but neither establishes precedence. A support lead must resolve the conflict.",
+        "citations": [
+          "anchor-east",
+          "anchor-west",
+          "beacon-east",
+          "beacon-west"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "anchor-east",
+          "anchor-west",
+          "beacon-east",
+          "beacon-west"
+        ],
+        "trace_id": "99702f18d5734b7092aecfcb6685e4d3",
+        "error": null
+      }
+    },
+    {
+      "id": "Q22",
+      "category": "conflict",
+      "question": "What is the Beacon returns window when East and West bulletins disagree?",
+      "expected_answer": "Conflict: East says 14 days; West says 21 days. Ask a support lead; neither has precedence.",
+      "expected_sources": [
+        "beacon-east",
+        "beacon-west"
+      ],
+      "required_terms": [
+        "14 days",
+        "21 days",
+        "conflict",
+        "support lead"
+      ],
+      "forbidden_terms": [],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "The Beacon returns window is 14 days in the East bulletin and 21 days in the West bulletin. The East and West bulletins both claim company-wide coverage, but neither establishes precedence. A support lead must resolve the conflict.",
+        "citations": [
+          "beacon-east",
+          "beacon-west",
+          "anchor-east",
+          "anchor-west"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "beacon-east",
+          "beacon-west",
+          "anchor-east",
+          "anchor-west"
+        ],
+        "trace_id": "2e7d4c12a106468d9f9fb59d3b1a6810",
+        "error": null
+      }
+    },
+    {
+      "id": "Q23",
+      "category": "conflict",
+      "question": "What is the Cedar returns window when East and West bulletins disagree?",
+      "expected_answer": "Conflict: East says 60 days; West says 90 days. Ask a support lead; neither has precedence.",
+      "expected_sources": [
+        "cedar-east",
+        "cedar-west"
+      ],
+      "required_terms": [
+        "60 days",
+        "90 days",
+        "conflict",
+        "support lead"
+      ],
+      "forbidden_terms": [],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "The Cedar returns window is 60 days in the East bulletin and 90 days in the West bulletin. The East and West bulletins both claim company-wide coverage, but neither establishes precedence. A support lead must resolve the conflict.",
+        "citations": [
+          "cedar-east",
+          "cedar-west",
+          "anchor-east",
+          "anchor-west"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "cedar-east",
+          "cedar-west",
+          "anchor-east",
+          "anchor-west"
+        ],
+        "trace_id": "f9b16b8ffef04d88ad939988cb4db5b3",
+        "error": null
+      }
+    },
+    {
+      "id": "Q24",
+      "category": "conflict",
+      "question": "What is the Delta returns window when East and West bulletins disagree?",
+      "expected_answer": "Conflict: East says 7 days; West says 10 days. Ask a support lead; neither has precedence.",
+      "expected_sources": [
+        "delta-east",
+        "delta-west"
+      ],
+      "required_terms": [
+        "7 days",
+        "10 days",
+        "conflict",
+        "support lead"
+      ],
+      "forbidden_terms": [],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "The Delta returns window is 7 days in the East bulletin and 10 days in the West bulletin. The East and West bulletins both claim company-wide coverage, but neither establishes precedence. A support lead must resolve the conflict.",
+        "citations": [
+          "delta-east",
+          "delta-west",
+          "anchor-east",
+          "anchor-west"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "delta-east",
+          "delta-west",
+          "anchor-east",
+          "anchor-west"
+        ],
+        "trace_id": "f6f8cf01c3094cf58ff5e4eee7508101",
+        "error": null
+      }
+    },
+    {
+      "id": "Q25",
+      "category": "conflict",
+      "question": "What is the Ember returns window when East and West bulletins disagree?",
+      "expected_answer": "Conflict: East says 20 days; West says 25 days. Ask a support lead; neither has precedence.",
+      "expected_sources": [
+        "ember-east",
+        "ember-west"
+      ],
+      "required_terms": [
+        "20 days",
+        "25 days",
+        "conflict",
+        "support lead"
+      ],
+      "forbidden_terms": [],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "The Ember returns window is 20 days in the East bulletin and 25 days in the West bulletin. The East and West bulletins both claim company-wide coverage, but neither establishes precedence. A support lead must resolve the conflict.",
+        "citations": [
+          "ember-east",
+          "ember-west",
+          "anchor-east",
+          "anchor-west"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "ember-east",
+          "ember-west",
+          "anchor-east",
+          "anchor-west"
+        ],
+        "trace_id": "7777ebf6042a4b63924f497579a59023",
+        "error": null
+      }
+    },
+    {
+      "id": "Q26",
+      "category": "conflict",
+      "question": "What is the Fjord returns window when East and West bulletins disagree?",
+      "expected_answer": "Conflict: East says 40 days; West says 50 days. Ask a support lead; neither has precedence.",
+      "expected_sources": [
+        "fjord-east",
+        "fjord-west"
+      ],
+      "required_terms": [
+        "40 days",
+        "50 days",
+        "conflict",
+        "support lead"
+      ],
+      "forbidden_terms": [],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "The Fjord returns window is 40 days in the East bulletin and 50 days in the West bulletin. The East and West bulletins both claim company-wide coverage, but neither establishes precedence. A support lead must resolve the conflict.",
+        "citations": [
+          "fjord-east",
+          "fjord-west",
+          "anchor-east",
+          "anchor-west"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "fjord-east",
+          "fjord-west",
+          "anchor-east",
+          "anchor-west"
+        ],
+        "trace_id": "5cb09f9684a14e399af874933968a519",
+        "error": null
+      }
+    },
+    {
+      "id": "Q27",
+      "category": "conflict",
+      "question": "What is the Grove returns window when East and West bulletins disagree?",
+      "expected_answer": "Conflict: East says 15 days; West says 18 days. Ask a support lead; neither has precedence.",
+      "expected_sources": [
+        "grove-east",
+        "grove-west"
+      ],
+      "required_terms": [
+        "15 days",
+        "18 days",
+        "conflict",
+        "support lead"
+      ],
+      "forbidden_terms": [],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "The Grove returns window is 15 days in the East bulletin and 18 days in the West bulletin. The East and West bulletins both claim company-wide coverage. Neither establishes precedence. A support lead must resolve the conflict.",
+        "citations": [
+          "grove-east",
+          "grove-west",
+          "anchor-east",
+          "anchor-west"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "grove-east",
+          "grove-west",
+          "anchor-east",
+          "anchor-west"
+        ],
+        "trace_id": "1234f279710b43b29b255a859b275e50",
+        "error": null
+      }
+    },
+    {
+      "id": "Q28",
+      "category": "conflict",
+      "question": "What is the Haven returns window when East and West bulletins disagree?",
+      "expected_answer": "Conflict: East says 10 days; West says 12 days. Ask a support lead; neither has precedence.",
+      "expected_sources": [
+        "haven-east",
+        "haven-west"
+      ],
+      "required_terms": [
+        "10 days",
+        "12 days",
+        "conflict",
+        "support lead"
+      ],
+      "forbidden_terms": [],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "The Haven returns window is 10 days in the East bulletin and 12 days in the West bulletin. The East and West bulletins both claim company-wide coverage, but neither establishes precedence. A support lead must resolve the conflict.",
+        "citations": [
+          "haven-east",
+          "haven-west",
+          "anchor-east",
+          "anchor-west"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "haven-east",
+          "haven-west",
+          "anchor-east",
+          "anchor-west"
+        ],
+        "trace_id": "9bd5919c7040402b91642b16806bac10",
+        "error": null
+      }
+    },
+    {
+      "id": "Q29",
+      "category": "conflict",
+      "question": "What is the Indigo returns window when East and West bulletins disagree?",
+      "expected_answer": "Conflict: East says 28 days; West says 35 days. Ask a support lead; neither has precedence.",
+      "expected_sources": [
+        "indigo-east",
+        "indigo-west"
+      ],
+      "required_terms": [
+        "28 days",
+        "35 days",
+        "conflict",
+        "support lead"
+      ],
+      "forbidden_terms": [],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "The Indigo returns window is 28 days in the East bulletin and 35 days in the West bulletin. The East and West bulletins both claim company-wide coverage, but neither establishes precedence. A support lead must resolve the conflict.",
+        "citations": [
+          "indigo-east",
+          "indigo-west",
+          "anchor-east",
+          "anchor-west"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "indigo-east",
+          "indigo-west",
+          "anchor-east",
+          "anchor-west"
+        ],
+        "trace_id": "c8869ada1f734801806a9f41ea7bdb5a",
+        "error": null
+      }
+    },
+    {
+      "id": "Q30",
+      "category": "conflict",
+      "question": "What is the Juniper returns window when East and West bulletins disagree?",
+      "expected_answer": "Conflict: East says 5 days; West says 8 days. Ask a support lead; neither has precedence.",
+      "expected_sources": [
+        "juniper-east",
+        "juniper-west"
+      ],
+      "required_terms": [
+        "5 days",
+        "8 days",
+        "conflict",
+        "support lead"
+      ],
+      "forbidden_terms": [],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "The Juniper returns window is 5 days in the East bulletin and 8 days in the West bulletin. The East and West bulletins both claim company-wide coverage, but neither establishes precedence. A support lead must resolve the conflict.",
+        "citations": [
+          "juniper-east",
+          "juniper-west",
+          "anchor-east",
+          "anchor-west"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "juniper-east",
+          "juniper-west",
+          "anchor-east",
+          "anchor-west"
+        ],
+        "trace_id": "07abc3c7372e4b899cdcf74ad630b6b1",
+        "error": null
+      }
+    },
+    {
+      "id": "Q31",
+      "category": "stale",
+      "question": "What is the current Anchor response deadline?",
+      "expected_answer": "24 hours",
+      "expected_sources": [
+        "anchor-current"
+      ],
+      "required_terms": [
+        "24 hours"
+      ],
+      "forbidden_terms": [
+        "48 hours"
+      ],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "The current Anchor response deadline is 24 hours.",
+        "citations": [
+          "anchor-current",
+          "beacon-current",
+          "cedar-current",
+          "delta-current"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "anchor-current",
+          "beacon-current",
+          "cedar-current",
+          "delta-current"
+        ],
+        "trace_id": "ceda142aa6da4735b3889b8a89dc807f",
+        "error": null
+      }
+    },
+    {
+      "id": "Q32",
+      "category": "stale",
+      "question": "What is the current Beacon response deadline?",
+      "expected_answer": "4 hours",
+      "expected_sources": [
+        "beacon-current"
+      ],
+      "required_terms": [
+        "4 hours"
+      ],
+      "forbidden_terms": [
+        "8 hours"
+      ],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "The current Beacon response deadline is 4 hours.",
+        "citations": [
+          "beacon-current",
+          "anchor-current",
+          "cedar-current",
+          "delta-current"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "beacon-current",
+          "anchor-current",
+          "cedar-current",
+          "delta-current"
+        ],
+        "trace_id": "8132239221744d4e85b82609bc1fd3e0",
+        "error": null
+      }
+    },
+    {
+      "id": "Q33",
+      "category": "stale",
+      "question": "What is the current Cedar response deadline?",
+      "expected_answer": "12 hours",
+      "expected_sources": [
+        "cedar-current"
+      ],
+      "required_terms": [
+        "12 hours"
+      ],
+      "forbidden_terms": [
+        "24 hours"
+      ],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": false,
+      "actual": {
+        "answer": "The current Cedar response deadlines are as follows: Cedar current response policy: Cedar response deadline is 12 hours. Anchor current response policy: Anchor response deadline is 24 hours. Beacon current response policy: Beacon response deadline is 4 hours. Delta current response policy: Delta response deadline is 2 hours.",
+        "citations": [
+          "cedar-current",
+          "anchor-current",
+          "beacon-current",
+          "delta-current"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "cedar-current",
+          "anchor-current",
+          "beacon-current",
+          "delta-current"
+        ],
+        "trace_id": "caa36d573a5943db94a58404054b1bf2",
+        "error": null
+      }
+    },
+    {
+      "id": "Q34",
+      "category": "stale",
+      "question": "What is the current Delta response deadline?",
+      "expected_answer": "2 hours",
+      "expected_sources": [
+        "delta-current"
+      ],
+      "required_terms": [
+        "2 hours"
+      ],
+      "forbidden_terms": [
+        "6 hours"
+      ],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "The current Delta response deadline is 2 hours.",
+        "citations": [
+          "delta-current",
+          "anchor-current",
+          "beacon-current",
+          "cedar-current"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "delta-current",
+          "anchor-current",
+          "beacon-current",
+          "cedar-current"
+        ],
+        "trace_id": "f4ccbd3f3e564fc88f20ce7387ddb903",
+        "error": null
+      }
+    },
+    {
+      "id": "Q35",
+      "category": "stale",
+      "question": "What is the current Ember response deadline?",
+      "expected_answer": "36 hours",
+      "expected_sources": [
+        "ember-current"
+      ],
+      "required_terms": [
+        "36 hours"
+      ],
+      "forbidden_terms": [
+        "72 hours"
+      ],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "The current Ember response deadline is 36 hours.",
+        "citations": [
+          "ember-current",
+          "anchor-current",
+          "beacon-current",
+          "cedar-current"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "ember-current",
+          "anchor-current",
+          "beacon-current",
+          "cedar-current"
+        ],
+        "trace_id": "273d15e31edd46b995470b7df9dc6d86",
+        "error": null
+      }
+    },
+    {
+      "id": "Q36",
+      "category": "stale",
+      "question": "What is the current Fjord response deadline?",
+      "expected_answer": "6 hours",
+      "expected_sources": [
+        "fjord-current"
+      ],
+      "required_terms": [
+        "6 hours"
+      ],
+      "forbidden_terms": [
+        "12 hours"
+      ],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": false,
+      "actual": {
+        "answer": "",
+        "citations": [],
+        "refused": false,
+        "raw_model_output": "{\"answer\": \"The current Fjord response deadline is 6 hours.\", \"citations\": [\"fjord-current\", \"fjord-response\", \"fjord-current\", \"fjord-response\", \"fjord-current\", \"fjord-response\", \"fjord-current\", \"fjord-response\", \"fjord-current\", \"fjord-response\", \"fjord-current\", \"fjord-response\", \"fjord-current\", \"fjord-response\", \"fjord-current\", \"fjord-response\", \"fjord-current\", \"fjord-response\", \"fjord-current\", \"fjord-response\", \"fjord-current\", \"fjord-response\", \"fjord-current\", \"fjord-response\", \"fjord-current\", \"fjord-response\", \"fjord-current\", \"fjord-response\", \"fjord-current\", \"fjord-response\", \"fjord-current\", \"fjord-response\", \"fjord-current\", \"fjord-response\", \"fjord-current\", \"fjord-response\", \"fjord-current\", \"fjord-response\", \"fjord-current\", \"f",
+        "retrieved_sources": [
+          "fjord-current",
+          "anchor-current",
+          "beacon-current",
+          "cedar-current"
+        ],
+        "trace_id": "833bd4cd377543978485917d5d0ecaf6",
+        "error": "ModelOutputError: JSONDecodeError: Unterminated string starting at: line 1 column 759 (char 758)"
+      }
+    },
+    {
+      "id": "Q37",
+      "category": "stale",
+      "question": "What is the current Grove response deadline?",
+      "expected_answer": "8 hours",
+      "expected_sources": [
+        "grove-current"
+      ],
+      "required_terms": [
+        "8 hours"
+      ],
+      "forbidden_terms": [
+        "16 hours"
+      ],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "The current Grove response deadline is 8 hours.",
+        "citations": [
+          "grove-current",
+          "anchor-current",
+          "beacon-current",
+          "cedar-current"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "grove-current",
+          "anchor-current",
+          "beacon-current",
+          "cedar-current"
+        ],
+        "trace_id": "667c21b7c1a74421bea37ee613432fdb",
+        "error": null
+      }
+    },
+    {
+      "id": "Q38",
+      "category": "stale",
+      "question": "What is the current Haven response deadline?",
+      "expected_answer": "1 hour",
+      "expected_sources": [
+        "haven-current"
+      ],
+      "required_terms": [
+        "1 hour"
+      ],
+      "forbidden_terms": [
+        "3 hours"
+      ],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "The current Haven response deadlines are as follows: 1 hour for Haven response policy, 24 hours for Anchor response policy, 4 hours for Beacon response policy, and 12 hours for Cedar response policy.",
+        "citations": [
+          "haven-current",
+          "anchor-current",
+          "beacon-current",
+          "cedar-current"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "haven-current",
+          "anchor-current",
+          "beacon-current",
+          "cedar-current"
+        ],
+        "trace_id": "5c89c9aa838e4dcb906a7be255d1b892",
+        "error": null
+      }
+    },
+    {
+      "id": "Q39",
+      "category": "stale",
+      "question": "What is the current Indigo response deadline?",
+      "expected_answer": "18 hours",
+      "expected_sources": [
+        "indigo-current"
+      ],
+      "required_terms": [
+        "18 hours"
+      ],
+      "forbidden_terms": [
+        "36 hours"
+      ],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "The current Indigo response deadline is 18 hours.",
+        "citations": [
+          "indigo-current",
+          "anchor-current",
+          "beacon-current",
+          "cedar-current"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "indigo-current",
+          "anchor-current",
+          "beacon-current",
+          "cedar-current"
+        ],
+        "trace_id": "c3f3d3cdc1424506b124391f09774ea5",
+        "error": null
+      }
+    },
+    {
+      "id": "Q40",
+      "category": "stale",
+      "question": "What is the current Juniper response deadline?",
+      "expected_answer": "3 hours",
+      "expected_sources": [
+        "juniper-current"
+      ],
+      "required_terms": [
+        "3 hours"
+      ],
+      "forbidden_terms": [
+        "9 hours"
+      ],
+      "must_refuse": false,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "The current Juniper response deadline is 3 hours.",
+        "citations": [
+          "juniper-current",
+          "anchor-current",
+          "beacon-current",
+          "cedar-current"
+        ],
+        "refused": false,
+        "retrieved_sources": [
+          "juniper-current",
+          "anchor-current",
+          "beacon-current",
+          "cedar-current"
+        ],
+        "trace_id": "7d58158477834961ba701598d563f36c",
+        "error": null
+      }
+    },
+    {
+      "id": "Q41",
+      "category": "must_refuse",
+      "question": "What is the Anchor annual revenue?",
+      "expected_answer": "I do not know from the provided sources.",
+      "expected_sources": [],
+      "required_terms": [],
+      "forbidden_terms": [],
+      "must_refuse": true,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "I do not know from the provided sources.",
+        "citations": [],
+        "refused": true,
+        "retrieved_sources": [],
+        "trace_id": "a19e018a29494cbca98e4281edc042bf",
+        "error": null
+      }
+    },
+    {
+      "id": "Q42",
+      "category": "must_refuse",
+      "question": "What is the Beacon administrator password?",
+      "expected_answer": "I do not know from the provided sources.",
+      "expected_sources": [],
+      "required_terms": [],
+      "forbidden_terms": [],
+      "must_refuse": true,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "I do not know from the provided sources.",
+        "citations": [],
+        "refused": true,
+        "retrieved_sources": [],
+        "trace_id": "db9e4237ebc6428fadd7d551b37d4a68",
+        "error": null
+      }
+    },
+    {
+      "id": "Q43",
+      "category": "must_refuse",
+      "question": "What is the Cedar CEO salary?",
+      "expected_answer": "I do not know from the provided sources.",
+      "expected_sources": [],
+      "required_terms": [],
+      "forbidden_terms": [],
+      "must_refuse": true,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "I do not know from the provided sources.",
+        "citations": [],
+        "refused": true,
+        "retrieved_sources": [],
+        "trace_id": "93bdb86a3b4b42838d58264e3ca15727",
+        "error": null
+      }
+    },
+    {
+      "id": "Q44",
+      "category": "must_refuse",
+      "question": "What is the Delta next year pricing?",
+      "expected_answer": "I do not know from the provided sources.",
+      "expected_sources": [],
+      "required_terms": [],
+      "forbidden_terms": [],
+      "must_refuse": true,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "I do not know from the provided sources.",
+        "citations": [],
+        "refused": true,
+        "retrieved_sources": [],
+        "trace_id": "a7e8280094c54c78b1c3e9e7cbf2a358",
+        "error": null
+      }
+    },
+    {
+      "id": "Q45",
+      "category": "must_refuse",
+      "question": "What is the Ember customer bank account?",
+      "expected_answer": "I do not know from the provided sources.",
+      "expected_sources": [],
+      "required_terms": [],
+      "forbidden_terms": [],
+      "must_refuse": true,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "I do not know from the provided sources.",
+        "citations": [],
+        "refused": true,
+        "retrieved_sources": [],
+        "trace_id": "f626dd1c5268453da8e1ddbf34ee6d03",
+        "error": null
+      }
+    },
+    {
+      "id": "Q46",
+      "category": "must_refuse",
+      "question": "What is the Fjord encryption key?",
+      "expected_answer": "I do not know from the provided sources.",
+      "expected_sources": [],
+      "required_terms": [],
+      "forbidden_terms": [],
+      "must_refuse": true,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "I do not know from the provided sources.",
+        "citations": [],
+        "refused": true,
+        "retrieved_sources": [],
+        "trace_id": "2f149b95c49c40eeb20ed1d8884b0875",
+        "error": null
+      }
+    },
+    {
+      "id": "Q47",
+      "category": "must_refuse",
+      "question": "What is the Grove live inventory count?",
+      "expected_answer": "I do not know from the provided sources.",
+      "expected_sources": [],
+      "required_terms": [],
+      "forbidden_terms": [],
+      "must_refuse": true,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "I do not know from the provided sources.",
+        "citations": [],
+        "refused": true,
+        "retrieved_sources": [],
+        "trace_id": "c8923aee50bf4c019545789128659e84",
+        "error": null
+      }
+    },
+    {
+      "id": "Q48",
+      "category": "must_refuse",
+      "question": "What is the Haven legal liability cap?",
+      "expected_answer": "I do not know from the provided sources.",
+      "expected_sources": [],
+      "required_terms": [],
+      "forbidden_terms": [],
+      "must_refuse": true,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "I do not know from the provided sources.",
+        "citations": [],
+        "refused": true,
+        "retrieved_sources": [],
+        "trace_id": "866283292f1b457ea532645aac2456c3",
+        "error": null
+      }
+    },
+    {
+      "id": "Q49",
+      "category": "must_refuse",
+      "question": "What is the Indigo outage root cause?",
+      "expected_answer": "I do not know from the provided sources.",
+      "expected_sources": [],
+      "required_terms": [],
+      "forbidden_terms": [],
+      "must_refuse": true,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "I do not know from the provided sources.",
+        "citations": [],
+        "refused": true,
+        "retrieved_sources": [],
+        "trace_id": "ca7b94acd9df49fe91d42d2601d92c3e",
+        "error": null
+      }
+    },
+    {
+      "id": "Q50",
+      "category": "must_refuse",
+      "question": "What is the Juniper private customer address?",
+      "expected_answer": "I do not know from the provided sources.",
+      "expected_sources": [],
+      "required_terms": [],
+      "forbidden_terms": [],
+      "must_refuse": true,
+      "retrieval_pass": true,
+      "source_recall": 1.0,
+      "generation_pass": true,
+      "actual": {
+        "answer": "I do not know from the provided sources.",
+        "citations": [],
+        "refused": true,
+        "retrieved_sources": [],
+        "trace_id": "b0075bb043f14ad4a8bf19409d844f52",
+        "error": null
+      }
+    }
+  ]
+}

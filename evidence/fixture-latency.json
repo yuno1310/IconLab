@@ -1,0 +1,35 @@
+{
+  "trace_source": "evidence\\improved-fixture\\traces.jsonl",
+  "price_source": "Not supplied; cost not estimated",
+  "percentile": "nearest rank",
+  "rows": [
+    {
+      "backend": "fixture",
+      "node": "retrieval",
+      "n": 50,
+      "p50_ms": 1.4071464538574219,
+      "p95_ms": 4.895925521850586,
+      "guessed_p50_ms": 5,
+      "guessed_p95_ms": 20,
+      "p50_gap_ms": -3.592853546142578,
+      "p95_gap_ms": -15.104074478149414,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "modeled_usd": null
+    },
+    {
+      "backend": "fixture",
+      "node": "generation",
+      "n": 50,
+      "p50_ms": 0.0,
+      "p95_ms": 0.0,
+      "guessed_p50_ms": 1,
+      "guessed_p95_ms": 5,
+      "p50_gap_ms": -1.0,
+      "p95_gap_ms": -5.0,
+      "input_tokens": null,
+      "output_tokens": null,
+      "modeled_usd": null
+    }
+  ]
+}

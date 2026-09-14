@@ -1,0 +1,110 @@
+{
+  "scope": "owned local synthetic process; no remote target",
+  "before_cross_owner": {
+    "owner": "analyst-b",
+    "summary": "Synthetic Beacon return inquiry",
+    "private_note": "internal-b"
+  },
+  "before_1000_calls": 1000,
+  "after_cross_owner": "Case unavailable",
+  "after_1000_calls": {
+    "accepted": 20,
+    "blocked": 980
+  },
+  "transport_responses": [
+    {
+      "jsonrpc": "2.0",
+      "id": 0,
+      "result": {
+        "protocolVersion": "2025-06-18",
+        "capabilities": {
+          "tools": {
+            "listChanged": false
+          }
+        },
+        "serverInfo": {
+          "name": "harbor-evidence",
+          "version": "1.0.0"
+        }
+      }
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"case_id\": \"case-a\", \"summary\": \"Synthetic Anchor return inquiry\"}"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 2,
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Case unavailable"
+          }
+        ],
+        "isError": true
+      }
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 3,
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Unknown tool"
+          }
+        ],
+        "isError": true
+      }
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 4,
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Case unavailable"
+          }
+        ],
+        "isError": true
+      }
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 5,
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Only case_id is accepted"
+          }
+        ],
+        "isError": true
+      }
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 6,
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Case unavailable"
+          }
+        ],
+        "isError": true
+      }
+    }
+  ]
+}

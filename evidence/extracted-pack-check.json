@@ -1,0 +1,46 @@
+{
+  "scope": "Automated extracted archive on the same machine; not independent human reproduction",
+  "tests": "passed",
+  "fixture_scores": {
+    "naive": {
+      "recorded_at": "2026-09-14T11:36:14.401946+00:00",
+      "python": "3.12.14",
+      "backend": "fixture",
+      "mode": "naive",
+      "n": 50,
+      "golden_sha256": "48c373efb3f18a8e9c417fc877b1fdd07fc51bd09a10c62b52129a3b188f13a3",
+      "corpus_sha256": "96a7eae730ec65601aadf1b63836a5f848a48ec5f03844b926d36faaf7b92410",
+      "retrieval_passes": 30,
+      "generation_passes": 10,
+      "errors": 0,
+      "categories": {
+        "easy": 10,
+        "synthesis": 10,
+        "conflict": 10,
+        "stale": 10,
+        "must_refuse": 10
+      },
+      "warning": "Fixture results are deterministic test-double results, not model quality evidence."
+    },
+    "improved": {
+      "recorded_at": "2026-09-14T11:36:14.749692+00:00",
+      "python": "3.12.14",
+      "backend": "fixture",
+      "mode": "improved",
+      "n": 50,
+      "golden_sha256": "48c373efb3f18a8e9c417fc877b1fdd07fc51bd09a10c62b52129a3b188f13a3",
+      "corpus_sha256": "96a7eae730ec65601aadf1b63836a5f848a48ec5f03844b926d36faaf7b92410",
+      "retrieval_passes": 50,
+      "generation_passes": 48,
+      "errors": 0,
+      "categories": {
+        "easy": 10,
+        "synthesis": 10,
+        "conflict": 10,
+        "stale": 10,
+        "must_refuse": 10
+      },
+      "warning": "Fixture results are deterministic test-double results, not model quality evidence."
+    }
+  }
+}

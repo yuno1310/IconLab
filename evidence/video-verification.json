@@ -1,0 +1,50 @@
+[
+  {
+    "file": "output\\videos\\assignment-04.mp4",
+    "duration_seconds": 180,
+    "resolution": "1280x720",
+    "audio": "AAC",
+    "mean_volume_db": -20.2,
+    "full_decode": "passed"
+  },
+  {
+    "file": "output\\videos\\assignment-06.mp4",
+    "duration_seconds": 180,
+    "resolution": "1280x720",
+    "audio": "AAC",
+    "mean_volume_db": -20.1,
+    "full_decode": "passed"
+  },
+  {
+    "file": "output\\videos\\assignment-09.mp4",
+    "duration_seconds": 180,
+    "resolution": "1280x720",
+    "audio": "AAC",
+    "mean_volume_db": -20.2,
+    "full_decode": "passed"
+  },
+  {
+    "file": "output\\videos\\assignment-10.mp4",
+    "duration_seconds": 180,
+    "resolution": "1280x720",
+    "audio": "AAC",
+    "mean_volume_db": -20.1,
+    "full_decode": "passed"
+  },
+  {
+    "file": "output\\videos\\assignment-13.mp4",
+    "duration_seconds": 180,
+    "resolution": "1280x720",
+    "audio": "AAC",
+    "mean_volume_db": -20.1,
+    "full_decode": "passed"
+  },
+  {
+    "file": "output\\videos\\final-deck.mp4",
+    "duration_seconds": 180,
+    "resolution": "1280x720",
+    "audio": "AAC",
+    "mean_volume_db": -20.1,
+    "full_decode": "passed"
+  }
+]
