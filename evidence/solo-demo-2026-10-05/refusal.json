@@ -1,0 +1,11 @@
+{
+  "backend": "ollama",
+  "mode": "improved",
+  "warning": "Local model output; review the cited evidence.",
+  "answer": "I do not know from the provided sources.",
+  "citations": [],
+  "refused": true,
+  "retrieved_sources": [],
+  "trace_id": "3165074cbdf149aa9b7e37a1618dd65b",
+  "error": null
+}

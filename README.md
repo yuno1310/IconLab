@@ -24,7 +24,9 @@ python -m src.evaluate --mode naive --out tmp/my-baseline
 python -m src.evaluate --mode improved --out tmp/my-improved
 ```
 
-These commands use a deterministic extractive fixture, not a language model. The complete model, Docker, tracing and reviewer procedure is in [SETUP.md](SETUP.md). Output directories must be new to avoid overwriting evidence.
+Ask a question against the local model with `python -m src.chat --question "What is the current Anchor response deadline?"`. Add `--backend fixture` for a labelled test double without Docker. See [the live demo guide](docs/live-demo-guide.md) and [current solo status](docs/solo-status.md).
+
+The three smoke commands use a deterministic extractive fixture, not a language model. The complete model, Docker, tracing and reviewer procedure is in [SETUP.md](SETUP.md). Output directories must be new to avoid overwriting evidence.
 
 ## How did you evaluate it?
 

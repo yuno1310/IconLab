@@ -28,6 +28,8 @@ Pinned images: Ollama 0.34.0, Langfuse 2.95.11, PostgreSQL 17.6-alpine. Langfuse
 
 ## 3. Run the actual model evaluations
 
+For a single-question demonstration, run `python -m src.chat --question "What is the current Anchor response deadline?"`. It prints answer, citation IDs, refusal and error status, and saves traces to `tmp/demo/traces.jsonl`. See `docs/live-demo-guide.md` for the three-minute walkthrough.
+
 ```powershell
 python -m src.evaluate --backend ollama --mode naive --out tmp/reviewer-model-baseline
 python -m src.evaluate --backend ollama --mode improved --out tmp/reviewer-model-improved
@@ -71,6 +73,8 @@ python -m src.evaluate --adapter your_adapter:answer --golden golden-set.yaml --
 For another corpus, author expected sources and answer criteria independently. Preserve the schema. This grader matches terms and source IDs; it is not a semantic judge. Measure false accepts and false rejects against human review.
 
 ## 7. Second-person gate and shutdown
+
+For the requested solo project, automated verification passed both a fresh Windows virtual environment and an isolated, network-disabled Linux Python runtime. Results are in `evidence/extracted-pack-check.json` and `evidence/clean-container-check.json`. To repeat the Linux check, first build the archive with `python scripts/check_package.py`, pull `python:3.12.14-slim`, then run `python scripts/verify_clean_container.py`. The script resolves and records the image digest. These automated checks cover fixtures and the CLI; they do not claim another person's review or a fresh full model/database deployment.
 
 Give a fresh copy to a person who has not seen the lab. They follow this file without verbal help, record errors verbatim, and fill `docs/reproduction-log.md`. A local self-test does not satisfy that requirement.
 

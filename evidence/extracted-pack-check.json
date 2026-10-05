@@ -1,9 +1,10 @@
 {
-  "scope": "Automated extracted archive on the same machine; not independent human reproduction",
+  "scope": "Automated extracted archive with a fresh virtual environment and no pip packages on the same machine; not independent human reproduction or a clean physical machine",
   "tests": "passed",
+  "demo_cli": "passed",
   "fixture_scores": {
     "naive": {
-      "recorded_at": "2026-09-14T11:36:14.401946+00:00",
+      "recorded_at": "2026-10-05T05:00:01.202180+00:00",
       "python": "3.12.14",
       "backend": "fixture",
       "mode": "naive",
@@ -23,7 +24,7 @@
       "warning": "Fixture results are deterministic test-double results, not model quality evidence."
     },
     "improved": {
-      "recorded_at": "2026-09-14T11:36:14.749692+00:00",
+      "recorded_at": "2026-10-05T05:00:01.434540+00:00",
       "python": "3.12.14",
       "backend": "fixture",
       "mode": "improved",

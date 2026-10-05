@@ -1,10 +1,13 @@
 # Track D submission pack
 
-The project is built and evaluated locally using free tooling and published at [yuno1310/IconLab](https://github.com/yuno1310/IconLab/tree/main). **The program is not fully signed off or submitted:** human review, independent reproduction and submission remain pending.
+The project is built and evaluated locally using free tooling and published at [yuno1310/IconLab](https://github.com/yuno1310/IconLab/tree/main). The owner requested a solo project. The technical pack is prepared; personal review and sending the final submission remain. Original-program human acceptance gates have not been claimed as completed. See [current solo status](docs/solo-status.md).
 
 ## Open first
 
 - `docs/final-handoff.md`: publishing commands and the specific human acceptance gates.
+- `docs/assignment-submissions.md`: direct links for each assignment's post, tag, deck and video.
+- `docs/live-demo-guide.md`: commands and a three-minute script for demonstrating the actual agent.
+- `docs/team-leader-update.md`: achievements and challenges based on the recorded work.
 - `output/evidence-review.html`: interactive comparison of all 50 recorded model answers, scores and security evidence. Open directly in a browser; no server is required.
 - `output/decks/final-deck-ready.pptx`: final editable eight-slide deck.
 - `output/videos/final-deck.mp4`: three-minute synthetic-voice evidence replay, with a companion transcript/subtitle file. It demonstrates saved actual runs, not a live screen recording or a human presentation.

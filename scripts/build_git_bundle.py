@@ -19,11 +19,11 @@ def main():
     tracked = git('diff', '--cached', '--name-only').splitlines()
     assert not any(p.startswith(('.env', 'tmp/', '.git/')) for p in tracked)
     git('-c', 'user.name=Codex', '-c', 'user.email=codex@localhost', 'commit', '-m', 'Prepare Track D submission evidence and deliverables')
-    git('tag', 'submission-ready-v1')
+    git('tag', 'solo-complete-v1')
     bundle = ROOT / 'output/harbor-track-d.bundle'
     git('bundle', 'create', str(bundle), '--all')
     git('bundle', 'verify', str(bundle))
-    print(f'Verified portable repository: {bundle}\nCommit: {git("rev-parse", "HEAD")}\nTracked files: {len(tracked)}\nTag: submission-ready-v1')
+    print(f'Verified portable repository: {bundle}\nCommit: {git("rev-parse", "HEAD")}\nTracked files: {len(tracked)}\nTag: solo-complete-v1')
 
 if __name__ == '__main__':
     main()

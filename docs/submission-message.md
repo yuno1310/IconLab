@@ -1,12 +1,12 @@
 # Submission message draft
 
-Do not send until the repository, assignment tag and human gates are complete. This is a draft, not a sent message.
+Ready-to-send draft for the owner's solo project. This message has not been sent. The original program's human review gates have not been claimed as satisfied; adapt the message to the actual recipient's acceptance requirements.
 
-Track D: Harbor Support Evidence Lab
+Solo Track D: Harbor Support Evidence Lab
 
 Repository: https://github.com/yuno1310/IconLab/tree/main (public, verified 2026-09-14)
 
-Submission snapshot tag: submission-ready-v1 (prepared snapshot; not a claim of historical assignment submissions)
+Assignment-specific prepared snapshot tags and direct post/deck/video links: docs/assignment-submissions.md. The existing submission-ready-v1 tag preserves the earlier package; solo-complete-v1 identifies the final solo handoff.
 
 Deck: attach the corresponding assignment-NN-ready.pptx
 

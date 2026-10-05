@@ -1,0 +1,54 @@
+{
+  "recorded_at": "2026-10-05T05:02:53.735001+00:00",
+  "image_digest": "python@sha256:f77ac9e44ae96ef2c90b8053ea08c31f8be030f824196b0ae4db6d462c84e51f",
+  "scope": "Fresh disposable Linux runtime with network disabled and no host Python packages. Fixture suite and CLI only; not another person or fresh full model/DB deployment.",
+  "python": "3.12.14",
+  "system": "Linux",
+  "tests": {
+    "exit_code": 0,
+    "output": "test_golden_integrity (test_lab.LabTests.test_golden_integrity) ... ok\ntest_grader_rejects_wrong_refusal (test_lab.LabTests.test_grader_rejects_wrong_refusal) ... ok\ntest_grader_separates_failure_types (test_lab.LabTests.test_grader_separates_failure_types) ... ok\ntest_injection_and_principal_override (test_lab.LabTests.test_injection_and_principal_override) ... ok\ntest_invalid_and_oversized_transport (test_lab.LabTests.test_invalid_and_oversized_transport) ... ok\ntest_mcp_actual_transport (test_lab.LabTests.test_mcp_actual_transport) ... ok\ntest_naive_remains_distinct (test_lab.LabTests.test_naive_remains_distinct) ... ok\ntest_ownership_and_projection (test_lab.LabTests.test_ownership_and_projection) ... ok\ntest_rate_window (test_lab.LabTests.test_rate_window) ... ok\ntest_refusal_not_masked_by_execution_error (test_lab.LabTests.test_refusal_not_masked_by_execution_error) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 0.195s\n\nOK\n"
+  },
+  "scores": {
+    "naive": {
+      "recorded_at": "2026-10-05T05:02:52.974814+00:00",
+      "python": "3.12.14",
+      "backend": "fixture",
+      "mode": "naive",
+      "n": 50,
+      "golden_sha256": "48c373efb3f18a8e9c417fc877b1fdd07fc51bd09a10c62b52129a3b188f13a3",
+      "corpus_sha256": "96a7eae730ec65601aadf1b63836a5f848a48ec5f03844b926d36faaf7b92410",
+      "retrieval_passes": 30,
+      "generation_passes": 10,
+      "errors": 0,
+      "categories": {
+        "easy": 10,
+        "synthesis": 10,
+        "conflict": 10,
+        "stale": 10,
+        "must_refuse": 10
+      },
+      "warning": "Fixture results are deterministic test-double results, not model quality evidence."
+    },
+    "improved": {
+      "recorded_at": "2026-10-05T05:02:53.283159+00:00",
+      "python": "3.12.14",
+      "backend": "fixture",
+      "mode": "improved",
+      "n": 50,
+      "golden_sha256": "48c373efb3f18a8e9c417fc877b1fdd07fc51bd09a10c62b52129a3b188f13a3",
+      "corpus_sha256": "96a7eae730ec65601aadf1b63836a5f848a48ec5f03844b926d36faaf7b92410",
+      "retrieval_passes": 50,
+      "generation_passes": 48,
+      "errors": 0,
+      "categories": {
+        "easy": 10,
+        "synthesis": 10,
+        "conflict": 10,
+        "stale": 10,
+        "must_refuse": 10
+      },
+      "warning": "Fixture results are deterministic test-double results, not model quality evidence."
+    }
+  },
+  "demo_cli": "passed"
+}

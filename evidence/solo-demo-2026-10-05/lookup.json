@@ -1,0 +1,21 @@
+{
+  "backend": "ollama",
+  "mode": "improved",
+  "warning": "Local model output; review the cited evidence.",
+  "answer": "The current Anchor response deadline is 24 hours.",
+  "citations": [
+    "anchor-current",
+    "beacon-current",
+    "cedar-current",
+    "delta-current"
+  ],
+  "refused": false,
+  "retrieved_sources": [
+    "anchor-current",
+    "beacon-current",
+    "cedar-current",
+    "delta-current"
+  ],
+  "trace_id": "d53852051b7b4ab68f4a2bee7062695c",
+  "error": null
+}

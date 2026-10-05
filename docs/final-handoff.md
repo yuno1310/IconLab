@@ -1,10 +1,10 @@
 # Final acceptance and publishing
 
-The deliverables are prepared and the project is public at https://github.com/yuno1310/IconLab/tree/main (verified 2026-09-14). Completion of the program still requires real human approvals and submission. A percentage is an estimate, not a verified acceptance result.
+The deliverables are prepared and the project is public at https://github.com/yuno1310/IconLab/tree/main. The owner requested a solo project; see `docs/solo-status.md` for the current scope. The original program's human approval gates below are recorded for reference; no sign-off is invented. A percentage is an estimate, not a verified acceptance result.
 
 ## Publish the prepared repository
 
-`output/harbor-track-d.bundle` is a portable Git repository containing the reviewed submission files and the `submission-ready-v1` tag. The commit identifies the preparation tool as Codex; it does not impersonate the intern. This tag marks the completed preparation snapshot, not past assignment submissions.
+`output/harbor-track-d.bundle` is a portable Git repository containing the prepared submission files and the `solo-complete-v1` tag. The commit identifies the preparation tool as Codex; it does not impersonate the intern. This tag marks the completed preparation snapshot, not past assignment submissions. A standalone bundle has its own preparation commit; the published repository has its existing history.
 
 The existing repository is already published. The commands below are only for creating a separate copy from the portable bundle:
 
@@ -14,7 +14,7 @@ cd harbor-track-d-publish
 git remote remove origin
 git remote add origin https://github.com/YOUR-ACCOUNT/YOUR-REPOSITORY.git
 git push -u origin codex/track-d
-git push origin submission-ready-v1
+git push origin solo-complete-v1
 ```
 
 Replace the example URL with the actual repository URL. Authenticate through GitHub's normal sign-in flow; do not paste tokens into chat. The bundle is delivered beside the ZIP to avoid embedding a repository inside itself. If using the ZIP alone, initialize Git in its extracted folder instead.
